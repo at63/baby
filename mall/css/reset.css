@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*
+版本：v=1
+制作人：李瑶琴
+时间：2015.03.30
+*/
+/*reset*/
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+body { font-family: "microsoft yahei"; color: #666; font-size: 16px; background: #fff;
+    /*-webkit-user-select: none;*/
+    /*-webkit-text-size-adjust: none;*/
+}
+body.mask-pop{ overflow: hidden;}
+header, section, footer {display: block; margin: 0; padding: 0;}
+img{ padding: 0; margin: 0; border: 0;}
+a { text-decoration: none; outline: 0;  cursor: pointer; color: #777;}
+button { outline: 0;   border: none;}
+button::-moz-focus-inner {  border: 0;}
+h1, h2, h3, h4, h5, h6 {  font-size: 100%;}
+ul, ol, li {   list-style: none;}
+img {  border: 0;}
+p, span, a {  -webkit-user-select: auto;}
+table {   border-collapse: collapse;  border-spacing: 0;}
+input {  outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+*:focus { outline: none;   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+a:link, a:visited { outline: none;}
+a:hover { outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+a:focus {  outline: none;   outline: none;   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    -webkit-text-stroke: none;}
+.l { float: left;}
+.r { float: right;}
+.auto { margin-left: auto;   margin-right: auto;}
+.clear { *zoom: 1;}
+.clear:after { content: '\0020';  display: block; height: 0; clear: both;}
+.hide{ display: none;}
+.show{ display: block;}
+/*公共样式*/
+.center{ max-width: 640px; margin: 0 auto;}
+.text-center{ text-align: center;}
+.font_s14{ font-size: 14px;}
+.font_s12{ font-size:12px;}
+.font_s9{ font-size:9px;}
+.font-style-s{ font-family: "宋体";}
+.text-green{ color: #04be41;}
+.text-red{ color:#c62b1f;}
+.text-gray{ color: #ccc;}
+.font_bold{ font-weight: bold;}
+.bg-white{ background: #fff;}
+.bg-gray{ background: #f5f5f5;}
+.pb5{ padding-bottom: 5px;}
+.p15{ padding: 15px;}
+.pb10{ padding-bottom: 10px;}
+.pb50{ padding-bottom: 50px;}
+.pb46{ padding-bottom:46px;}
+.pt50{ padding-top: 50px;}
+.mr10{ margin-right: 10px;}
+.mt10{ margin-top: 10px;}
+.mb5{ margin-bottom: 5px;}
+.mb10{ margin-bottom: 10px;}
+.inline-b{ display: inline-block;}
+.posit-r{ position: relative;}
+.line-h20{ line-height: 20px;}
+.line-h30{ line-height: 30px;}
+.line-h40{ line-height: 40px;}
+.plr4{ padding: 0 4px;}
+.text-indent2{ text-indent: 24px;}
+/*产品列表图片大小*/
+
+/*二级页面头部导航*/
+.sub-content{ margin: 0 auto; position: relative; background: #fff; padding-top: 41px;}
+.posit-top{ width: 100%; height: 40px; line-height: 40px; background: #fbfbfb; border-bottom: 1px solid #d3d3d3;position: fixed; left: 0; top:0; color: #666; z-index: 899;
+    text-align: center; font-size: 16px; font-weight: 200;}
+.history-back{ display: block; width: 9px; padding: 13px; position: absolute; left: 0; top:50%; margin-top: -20px;}
+.history-back img{ display: block; width: 100%;}
+.chanpin-list-more{ text-align: center; font-size: 12px; color: #666; line-height:20px; padding: 8px 0; cursor: pointer;}
+
+/*footer*/
+.footer{ width: 100%; position: fixed; left:0; bottom: 0; background: #404040; z-index: 100;}
+.footer:after { content: '\0020';  display: block; height: 0; clear: both;}
+.footer .btn-quite{ width: 25%; height: 46px; float: left; text-align: center; font-size: 10px; color: #fff; line-height: 1.2;}
+.footer .btn-quite a{ display: inline-block; color: #fff;}
+.footer .btn-quite .icon-foot{ display:block; width: 26px; height: 17px;background: url(../images/icon_foot.png) no-repeat; background-size: auto 100%; margin:6px auto 4px auto;}
+.footer .btn-quite.home .icon-foot{ background-position: 5px center;}
+.footer .btn-quite.tuijian .icon-foot{ background-position: -75px center;}
+.footer .btn-quite.shopping{position: relative;}
+.footer .btn-quite.shopping .icon-foot{ background-position: -157px center;}
+.shop-num{ display: inline-block; position: absolute;min-width: 14px; background: #c00; line-height: 14px; border-radius: 50%; color: #fff; z-index: 1026; font-size: 10px; padding: 2px;
+    text-align: center;}
+.btn-quite.shopping .shop-num{ left: 50%; top:2px; margin-left:5px;font-family: 'microsoft yahei';}
+.footer .btn-quite.yonghu .icon-foot{ background-position: -231px center;}
+/*.footer .btn-quite.active .icon-foot{ background-image: url(../images/icon_foot_active.png);}*/
+.footer .btn-quite.active{ background: #669933;}
+

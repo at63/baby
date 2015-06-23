@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" href="css/login.css" rel="stylesheet" media="screen"/>
+
+</head>
+
+<body>
+<div class="sub-content warper">
+    <h1 class="posit-top">
+        <span class="org-title">用户登录</span>
+        <a class="history-back" href="javascript:history.back()"><img src="images/login-back.png" alt="返回"/></a>
+    </h1>
+    <form accept-charset="utf-8" method="post" action="user.html" id="login">
+        <ul class="new_lo">
+            <li>
+                <i class="input-icon user"></i>
+               <p class="notice_div">
+                    <input type="text" required name="email" placeholder="请输入邮箱/用户名/手机号" class="login-reg-input email_input"
+                           id="account" alertname="用户名" oninvalid="setCustomValidity('请输入用户名');" oninput="setCustomValidity('');">
+               </p>
+            </li>
+            <li>
+                <i class="input-icon password"></i>
+                <p class="notice_div">
+                <input type="password" required name="password" placeholder="请输入密码" id="password" class="login-reg-input" alertname="密码" oninvalid="setCustomValidity('请输入密码');" oninput="setCustomValidity('');">
+                </p>
+            </li>
+
+        </ul>
+        <div class="login_bar">
+
+            <input type="submit" class="long_button login_button" id="ga_login" value="立即登录">
+            <a href="register.html" class="pull_left fon_color">免费注册</a>
+            <a href="ForgotPassword.html">找回密码</a>
+        </div>
+    </form>
+    <div class="line"><a href="BusinessLogin.html" class="gh_login">供货商登录</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,677 @@
+@charset "utf-8";
+/*按钮*/
+.btn-ljrg .line{
+    transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -webkit-transition:0.4s ease;
+    -o-transition:0.4s ease;
+}
+/*head*/
+.fly-big{animation: fly1 3s linear infinite;
+    -ms-animation: fly1 3s linear infinite; -moz-animation: fly1 3s linear infinite;
+    -webkit-animation: fly1 5s linear infinite; -o-animation: fly1 3s linear infinite;}
+.fly-small{animation: fly2 5.4s linear infinite;
+    -ms-animation: fly2 5.4s linear infinite;   -moz-animation: fly2 5.4s linear infinite;
+    -webkit-animation: fly2 5.4s linear infinite;  -o-animation: fly2 5.4s linear infinite;}
+/*中欧新蓝筹雪花*/
+.zoxlc-img-snow1 {
+    animation: clockwise 3s linear infinite;
+    -ms-animation: clockwise 3s linear infinite;
+    -moz-animation: clockwise 3s linear infinite;
+    -webkit-animation: clockwise 3s linear infinite;
+    -o-animation: clockwise 3s linear infinite;
+}
+.zoxlc-img-snow2 img {
+    animation: clockwise 2s linear infinite;
+    -ms-animation: clockwise 2s linear infinite;
+    -moz-animation: clockwise 2s linear infinite;
+    -webkit-animation: clockwise 2s linear infinite;
+    -o-animation: clockwise 2s linear infinite;
+}
+.zoxlc-img-snow3 img {
+    animation: clockwise 1s linear infinite;
+    -ms-animation: clockwise 1s linear infinite;
+    -moz-animation: clockwise 1s linear infinite;
+    -webkit-animation: clockwise 1s linear infinite;
+    -o-animation: clockwise 1s linear infinite;
+}
+.zoxlc .jijin-img{
+    animation: move1 3s linear infinite;
+    -ms-animation: move1 3s linear infinite;
+    -moz-animation: move1 3s linear infinite;
+    -webkit-animation: move1 3s linear infinite;
+    -o-animation: move1 3s linear infinite;
+}
+
+/*易方达光晕*/
+.yfd-img-son {
+    animation: yfd_sun 0.6s linear infinite alternate;
+    -ms-animation: yfd_sun 0.6s linear infinite alternate;
+    -moz-animation: yfd_sun 0.6s linear infinite alternate;
+    -webkit-animation: yfd_sun 0.6s linear infinite alternate;
+    -o-animation: yfd_sun 0.6s linear infinite alternate;
+}
+
+/*建信双息红利债券*/
+.jxsx-fire1 {
+    animation: fire 3s linear infinite alternate;
+    -ms-animation: fire 3s linear infinite alternate;
+    -moz-animation: fire 3s linear infinite alternate;
+    -webkit-animation: fire 3s linear infinite alternate;
+    -o-animation: fire 3s linear infinite alternate;
+}
+.jxsx-fire {
+    animation: opa1 0.6s linear infinite alternate;
+    -ms-animation: opa1 0.6s linear infinite alternate;
+    -moz-animation: opa1 0.6s linear infinite alternate;
+    -webkit-animation: opa1 1s linear infinite alternate;
+    -o-animation: opa1 0.6s linear infinite alternate;
+}
+
+/*光大保德*/
+.gdbd-wing.left{animation: wing_left 2s linear infinite;
+    -ms-animation: wing_left 2s linear infinite;
+    -moz-animation: wing_left 2s linear infinite;
+    -webkit-animation: wing_left 2s linear infinite;
+    -o-animation: wing_left 2s linear infinite;
+}
+.gdbd-wing.right{animation: wing_right 2s linear infinite;
+    -ms-animation: wing_right 2s linear infinite;
+    -moz-animation: wing_right 2s linear infinite;
+    -webkit-animation: wing_right 2s linear infinite;
+    -o-animation: wing_right 2s linear infinite;
+}
+.drift{animation: drift 3s linear infinite;
+    -ms-animation: drift 3s linear infinite;
+    -moz-animation: drift 3s linear infinite;
+    -webkit-animation: drift 3s linear infinite;
+    -o-animation: drift 3s linear infinite;
+}
+
+/*中欧新蓝筹雪花*/
+@keyframes clockwise {  from {transform: rotate(0deg)} to {transform: rotate(360deg)}}
+@-ms-keyframes clockwise { from {-ms-transform: rotate(0deg)} to {-ms-transform: rotate(360deg)}}
+@-moz-keyframes clockwise {  from { -moz-transform: rotate(0deg)}  to {-moz-transform: rotate(360deg)}}
+@-webkit-keyframes clockwise {  from {-webkit-transform: rotate(0deg)}  to {-webkit-transform: rotate(360deg)}}
+@-o-keyframes clockwise {  from {-o-transform: rotate(0deg)}  to {-o-transform: rotate(360deg)}}
+/*移动*/
+@keyframes move1 {
+    0% {left:2px;} 30% {left: 16px;} 50% {left: 16px;} 80% {left:2px;}  100% {left: 2px;}}
+@-ms-keyframes move1 {
+    0% {left:2px;} 30% {left: 16px;} 50% {left: 16px;} 80% {left:2px;}  100% {left: 2px;}}
+@-webkit-keyframes move1 {
+    0% {left:2px;} 30% {left: 16px;} 50% {left: 16px;} 80% {left:2px;}  100% {left: 2px;}}
+@-moz-keyframes move1 {
+    0% {left:2px;} 30% {left: 16px;} 50% {left: 16px;} 80% {left:2px;}  100% {left: 2px;}}
+@-o-keyframes move1 {
+    0% {left:2px;} 30% {left: 16px;} 50% {left: 16px;} 80% {left:2px;}  100% {left: 2px;}}
+
+/*易方达光晕*/
+@keyframes yfd_sun {  from {transform: scale(1, 1)}  to {transform: scale(1.13, 1.13)}}
+@-ms-keyframes yfd_sun {  from {-ms-transform: scale(1, 1)}  to {-ms-transform: scale(1.13, 1.13)}}
+@-moz-keyframes yfd_sun {  from {-moz-transform: scale(1, 1)}  to {-moz-transform: scale(1.13, 1.13)}}
+@-webkit-keyframes yfd_sun {  from { -webkit-transform: scale(1, 1)  } to {    -webkit-transform: scale(1.13, 1.13) }}
+@-o-keyframes yfd_sun {  from { -o-transform: scale(1, 1)} to { -o-transform: scale(1.13, 1.13) }}
+/*大摩多因子*/
+.dmdyz .jijin-img{
+    animation: fd1 2s linear infinite;
+    -ms-animation: fd1 2s linear infinite;
+    -moz-transform: fd1 2s linear infinite;
+    -webkit-animation: fd1 2s linear infinite;
+    -o-transform: fd1 2s linear infinite;
+}
+.dmdyz-zd-s{
+    animation: zd1 0.3s linear infinite;
+    -ms-animation: zd1 0.3s linear infinite;
+    -moz-transform: zd1 0.3s linear infinite;
+    -webkit-animation: zd1 0.3s linear infinite;
+    -o-transform: zd1 0.3s linear infinite;
+}
+.dmdyz-zd-l{
+    animation: zd2 0.3s linear infinite;
+    -ms-animation: zd2 0.3s linear infinite;
+    -moz-transform: zd2 0.3s linear infinite;
+    -webkit-animation: zd2 0.3s linear infinite;
+    -o-transform: zd2 0.3s linear infinite;
+}
+.dmdyz-zd-r{
+    animation: zd3 3s linear infinite;
+    -ms-animation: zd3 3s linear infinite;
+    -moz-transform: zd3 3s linear infinite;
+    -webkit-animation: zd3 3s linear infinite;
+    -o-transform: zd3 3s linear infinite;
+}
+
+/*富国天成*/
+.fgtc .jijin-img{
+    animation: fd2 0.2s linear infinite;
+    -ms-animation: fd2 0.2s linear infinite;
+    -moz-transform: fd2 0.2s linear infinite;
+    -webkit-animation: fd2 0.2s linear infinite;
+    -o-transform: fd2 0.2s linear infinite;
+}
+.fgtc-img-fire{
+    animation: opa1 0.5s linear infinite;
+    -ms-animation: opa1 0.5s linear infinite;
+    -moz-transform: opa1 0.5s linear infinite;
+    -webkit-animation: opa1 0.5s linear infinite;
+    -o-transform: opa1 0.5s linear infinite;
+}
+/*建信双息红利债券*/
+.jxsx-img-p img{ animation: jxsxp 0.4s ease infinite;
+    -ms-animation: jxsxp 0.4s ease infinite;
+    -moz-animation: jxsxp 0.4s ease infinite;
+    -webkit-animation: jxsxp 0.4s ease infinite;
+    -o-animation: jxsxp 0.4s ease infinite;}
+
+/*光大保德信*/
+/*左边翅膀*/
+@keyframes wing_left {
+    0% {
+        transform: rotateY(0deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotateY(20deg);
+        left: 10px;
+    }
+    100% {
+        transform: rotateY(0deg);
+        left: 0px;
+    }
+}
+@-ms-keyframes wing_left {
+    0% {
+        -ms-transform: rotateY(0deg);
+        left: 0px;
+    }
+    50% {
+        -ms-transform: rotateY(20deg);
+        left: 10px;
+    }
+    100% {
+        -ms-transform: rotateY(0deg);
+        left: 0px;
+    }
+}
+@-moz-keyframes wing_left {
+    0% {
+        -moz-transform: rotateY(0deg);
+        left: 0px;
+    }
+    50% {
+        -moz-transform: rotateY(20deg);
+        left: 10px;
+    }
+    100% {
+        -moz-transform: rotateY(0deg);
+        left: 0px;
+    }
+}
+@-webkit-keyframes wing_left {
+    0% {
+        transform: rotateY(0deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotateY(-20deg);
+        left: 10px;
+    }
+    100% {
+        transform: rotateY(0deg);
+        left: 0px;
+    }
+}
+@-o-keyframes wing_left {
+    0% {
+        -o-transform: rotateY(0deg);
+        left: 0px;
+    }
+    50% {
+        -o-transform: rotateY(20deg);
+        left: 10px;
+    }
+    100% {
+        -o-transform: rotateY(0deg);
+        left: 0px;
+    }
+}
+/*右边翅膀*/
+@keyframes wing_right {
+    0% {
+        transform: rotateY(0deg);
+        left: 213px;
+    }
+    50% {
+        transform: rotateY(-20deg);
+        left: 203px;
+    }
+    100% {
+        transform: rotateY(0deg);
+        left: 213px;
+    }
+}
+@-ms-keyframes wing_right {
+    0% {
+        -ms-transform: rotateY(0deg);
+        left: 213px;
+    }
+    50% {
+        -ms-transform: rotateY(-20deg);
+        left: 203px;
+    }
+    100% {
+        -ms-transform: rotateY(0deg);
+        left: 213px;
+    }
+}
+@-moz-keyframes wing_right {
+    0% {
+        -moz-transform: rotateY(0deg);
+        left: 213px;
+    }
+    50% {
+        -moz-transform: rotateY(-20deg);
+        left: 203px;
+    }
+    100% {
+        -moz-transform: rotateY(0deg);
+        left: 213px;
+    }
+}
+@-webkit-keyframes wing_right {
+    0% {
+        transform: rotateY(0deg);
+        left: 213px;
+    }
+    50% {
+        transform: rotateY(-20deg);
+        left: 203px;
+    }
+    100% {
+        transform: rotateY(deg);
+        left: 213px;
+    }
+}
+@-o-keyframes wing_right {
+    0% {
+        -o-transform: rotateY(deg);
+        left: 213px;
+    }
+    50% {
+        -o-transform: rotateY(-20deg);
+        left: 203px;
+    }
+    100% {
+        -o-transform: rotateY(deg);
+        left: 213px;
+    }
+}
+
+/*蝴蝶上下飘动*/
+@keyframes drift {
+    0% {
+        left: 10px;
+        top: 22px;
+    }
+    45% {
+        left: 20px;
+        top: 10px;
+    }
+    55% {
+        left: 20px;
+        top: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 22px;
+    }
+}
+@-ms-keyframes drift {
+    0% {
+        left: 10px;
+        top: 22px;
+    }
+    45% {
+        left: 20px;
+        top: 10px;
+    }
+    55% {
+        left: 20px;
+        top: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 22px;
+    }
+}
+@-moz-keyframes drift {
+    0% {
+        left: 10px;
+        top: 22px;
+    }
+    45% {
+        left: 20px;
+        top: 10px;
+    }
+    55% {
+        left: 20px;
+        top: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 22px;
+    }
+}
+@-webkit-keyframes drift {
+    0% {
+        left: 10px;
+        top: 22px;
+    }
+    45% {
+        left: 20px;
+        top: 10px;
+    }
+    55% {
+        left: 20px;
+        top: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 22px;
+    }
+}
+@-o-keyframes drift {
+    0% {
+        left: 10px;
+        top: 22px;
+    }
+    45% {
+        left: 20px;
+        top: 10px;
+    }
+    55% {
+        left: 20px;
+        top: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 22px;
+    }
+}
+
+/*飞行效果1*/
+@keyframes fly1 {
+    0% {
+        margin-left:0;
+        margin-top: 0;
+
+    }
+    50% {
+        margin-left:10px;
+        margin-top: -10px;
+
+    }
+    100% {
+        margin-left:0;
+        margin-top: 0;
+    }
+}
+@-ms-keyframes fly1 {
+    0% {
+        margin-left:0;
+        margin-top: 0;
+
+    }
+    50% {
+        margin-left:10px;
+        margin-top: -10px;
+
+    }
+    100% {
+        margin-left:0;
+        margin-top: 0;
+    }
+}
+@-moz-keyframes fly1 {
+    0% {
+        margin-left:0;
+        margin-top: 0;
+
+    }
+    50% {
+        margin-left:10px;
+        margin-top: -10px;
+
+    }
+    100% {
+        margin-left:0;
+        margin-top: 0;
+    }
+}
+@-webkit-keyframes fly1 {
+    0% {
+        margin-left:0;
+        margin-top: 0;
+
+    }
+    50% {
+        margin-left:10px;
+        margin-top: -10px;
+
+    }
+    100% {
+        margin-left:0;
+        margin-top: 0;
+    }
+}
+@-o-keyframes fly1 {
+    0% {
+        margin-left:0;
+        margin-top: 0;
+
+    }
+    50% {
+        margin-left:10px;
+        margin-top: -10px;
+    }
+    100% {
+        margin-left:0;
+        margin-top: 0;
+    }
+}
+/*飞行效果2*/
+@keyframes fly2 {
+    0% { margin-left: 0; margin-top: 0;}
+    50% {margin-left: 8px; margin-top: 18px;}
+    100% {margin-left: 0; margin-top: 0;}
+
+}
+@-ms-keyframes fly2 {
+    0% { margin-left: 0; margin-top: 0;}
+    50% {margin-left: 8px; margin-top: 18px;}
+    100% {margin-left: 0; margin-top: 0;}
+
+}
+@-moz-keyframes fly2 {
+    0% { margin-left: 0; margin-top: 0;}
+    50% {margin-left: 8px; margin-top: 18px;}
+    100% {margin-left: 0; margin-top: 0;}
+}
+@-webkit-keyframes fly2 {
+    0% { margin-left: 0; margin-top: 0;}
+    50% {margin-left: 8px; margin-top: 18px;}
+    100% {margin-left: 0; margin-top: 0;}
+}
+@-o-keyframes fly2 {
+    0% { margin-left: 0; margin-top: 0;}
+    50% {margin-left: 8px; margin-top: 18px;}
+    100% {margin-left: 0; margin-top: 0;}
+}
+
+/*改透明度*/
+@keyframes opa1 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+@-ms-keyframes opa1 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+@-moz-keyframes opa1 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+@-webkit-keyframes opa1 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+@-o-keyframes opa1 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+
+/*小子弹*/
+@keyframes zd1 {
+    0% {width: 389px; left: 60px;}
+    50% {width: 400px; left: 55px; }
+    100% {width: 389px; left: 60px;}
+}
+@-ms-keyframes zd1 {
+    0% {width: 389px; left: 60px;}
+    50% {width: 400px; left: 55px; }
+    100% {width: 389px; left: 60px;}
+}
+@-moz-keyframes zd1 {
+    0% {width: 389px; left: 60px;}
+    50% {width: 400px; left: 55px; }
+    100% {width: 389px; left: 60px;}
+}
+@-webkit-keyframes zd1 {
+    0% {width: 389px; left: 60px;}
+    50% {width: 400px; left: 55px; }
+    100% {width: 389px; left: 60px;}
+}
+@-o-keyframes zd1 {
+    0% {width: 389px; left: 60px;}
+    50% {width: 400px; left: 55px; }
+    100% {width: 389px; left: 60px;}
+}
+/*左边子弹*/
+@keyframes zd2 {
+    0% {top: 192px;} 25%{top: 190px;}  50% {top: 187px;}  75% {top: 190px;}  100% {top: 192px;}
+}
+@-ms-keyframes zd2 {
+    0% {top: 192px;} 25%{top: 190px;}  50% {top: 187px;}  75% {top: 190px;}  100% {top: 192px;}
+}
+@-moz-keyframes zd2 {
+    0% {top: 192px;} 25%{top: 190px;}  50% {top: 187px;}  75% {top: 190px;}  100% {top: 192px;}
+}
+@-webkit-keyframes zd2 {
+    0% {top: 192px;} 25%{top: 190px;}  50% {top: 187px;}  75% {top: 190px;}  100% {top: 192px;}
+}
+@-o-keyframes zd2 {
+    0% {top: 192px;} 25%{top: 190px;}  50% {top: 187px;}  75% {top: 190px;}  100% {top: 192px;}
+}
+/*右边子弹*/
+@keyframes zd3 {
+    0% {left: 379px; top: 227px;}
+    50% {left: 370px; top: 231px; }
+    100% {left: 379px; top: 227px; }
+}
+@-ms-keyframes zd3 {
+    0% {left: 379px; top: 227px;}
+    50% {left: 370px; top: 231px; }
+    100% {left: 379px; top: 227px; }
+}
+@-moz-keyframes zd3 {
+    0% {left: 379px; top: 227px;}
+    50% {left: 370px; top: 231px; }
+    100% {left: 379px; top: 227px; }
+}
+@-webkit-keyframes zd3 {
+    0% {left: 379px; top: 227px;}
+    50% {left: 370px; top: 231px; }
+    100% {left: 379px; top: 227px; }
+}
+@-o-keyframes zd3 {
+    0% {left: 379px; top: 227px;}
+    50% {left: 370px; top: 231px; }
+    100% {left: 379px; top: 227px; }
+}
+/*fgtc人物飘动*/
+@keyframes fd1 {
+    0% {transform: rotateZ(-3deg); }
+    50% {transform: rotateZ(3deg); }
+    100% {transform: rotateZ(-3deg);}
+}
+@-ms-keyframes fd1 {
+    0% { -ms-transform: rotateZ(-3deg); }
+    50% { -ms-transform: rotateZ(3deg); }
+    100% { -ms-transform: rotateZ(-3deg);}
+}
+@-moz-keyframes fd1 {
+    0% { -moz-transform: rotateZ(-3deg); }
+    50% { -moz-transform: rotateZ(3deg); }
+    100% { -moz-transform: rotateZ(-3deg);}
+}
+@-webkit-keyframes fd1 {
+    0% { -webkit-transform: rotateZ(-3deg); }
+    50% { -webkit-transform: rotateZ(3deg); }
+    100% { -webkit-transform: rotateZ(-3deg);}
+}
+@-o-keyframes fd1 {
+    0% { -o-transform: rotateZ(-3deg); }
+    50% { -o-transform: rotateZ(3deg); }
+    100% { -o-transform: rotateZ(-3deg);}
+}
+/*fgtc人物飘动*/
+@keyframes fd2 {
+    0% {margin-left: 0; margin-top: 0; }
+    50% { margin-left: 2px; margin-top: 2px; }
+    100% {margin-left: 0; margin-top: 0;  }
+}
+@-ms-keyframes fd2 {
+    0% {margin-left: 0; margin-top: 0; }
+    50% { margin-left: 2px; margin-top: 2px; }
+    100% {margin-left: 0; margin-top: 0;  }
+}
+@-moz-keyframes fd2 {
+    0% {margin-left: 0; margin-top: 0; }
+    50% { margin-left: 2px; margin-top: 2px; }
+    100% {margin-left: 0; margin-top: 0;  }
+}
+@-webkit-keyframes fd2 {
+    0% {margin-left: 0; margin-top: 0; }
+    50% { margin-left: 2px; margin-top: 2px; }
+    100% {margin-left: 0; margin-top: 0;  }
+}
+@-o-keyframes fd2 {
+    0% {margin-left: 0; margin-top: 0; }
+    50% { margin-left: 2px; margin-top: 2px; }
+    100% {margin-left: 0; margin-top: 0;  }
+}
+/*jxsx火光*/
+@keyframes fire {0% {opacity: 0.3;}50% {opacity: 1;}100% {opacity: 0.3;}}
+@-ms-keyframes fire {0% {opacity: 0.3;}50% {opacity: 1;}100% {opacity: 0.3;}}
+@-moz-keyframes fire {0% {opacity: 0.3;}50% {opacity: 1;}100% {opacity: 0.3;}}
+@-webkit-keyframes fire {0% {opacity: 0.3;}50% {opacity: 1;}100% {opacity: 0.3;}}
+@-o-keyframes fire {0% {opacity: 0.3;}50% {opacity: 1;}100% {opacity: 0.3;}}
+
+/*jxsx放大*/
+@keyframes jxsxp {0% {width:539px;}25% {width:541px;}50% {width:539px;}75% {width:541px;}
+    100% {width:539px;}}
+@-ms-keyframes jxsxp {0% {width:539px;}25% {width:541px;}50% {width:539px;}75% {width:541px;}
+    100% {width:539px;}}
+@-moz-keyframes jxsxp {0% {width:539px;}25% {width:541px;}50% {width:539px;}75% {width:541px;}
+    100% {width:539px;}}
+@-webkit-keyframes jxsxp {0% {width:539px;}25% {width:541px;}50% {width:539px;}75% {width:541px;}
+    100% {width:539px;}}
+@-o-keyframes jxsxp {0% {width:539px;}25% {width:541px;}50% {width:539px;}75% {width:541px;}
+    100% {width:539px;}}

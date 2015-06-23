@@ -1,0 +1,269 @@
+
+/*公用*/
+*{font-family: Tahoma, Helvetica, Arial,"宋体", sans-serif; font-size: 13px;}
+.center{ width: 990px; margin: 0 auto;}
+.clear{ clear: both;}
+.po-relative{ position: relative;}
+.padding-t20{ padding-top: 20px;}
+.margin-b20{ margin-bottom: 20px;}
+.w214{ width: 214px;}
+.fl-left{ float: left;}
+.fl-right{ float: right;}
+/*头部*/
+.header-main{ height: 124px;width: 990px; margin: 0 auto; position: relative;}
+#logo{ width: 338px; height: 84px; position: absolute; left: 0px; bottom: 10px;}
+.welcome{width: 460px; height: 26px; line-height: 26px;  position: absolute; left: 0px; top: 0px; font-size: 13px;}
+.mini-nav{width: 460px; height: 26px; line-height: 26px;  position: absolute; right: 0px; top: 0px; font-size: 13px; text-align: right; color: #ddd;}
+.mini-nav a{ font-size: 14px; text-decoration: none; padding: 5px 10px;}
+.mini-nav .student_services{ border-radius: 0 0 3px 3px;}
+#skin{ width: 50px; height: 15px; position: absolute; right: 0; top:34px;}
+#skin a{ display: block; width: 15px; height: 15px; float: left; margin-right: 10px;}
+#skin a.org{ background: #c90;}
+#skin a.blue{ background: #2f559f;}
+/*导航*/
+#nav{ height: 36px;}
+.nav-main{width: 990px;height: 36px; margin: 0 auto; position: relative; }
+#nav li{ padding-top:4px; height: 32px; border-right: 1px solid #dbdbdb; border-left: 1px solid #fafafa; float: left;}
+#nav li:first-child{ border-left: 0;}
+#nav li:last-child{ border-right: 0;}
+#nav li a{ display: block; padding: 0 9px; height: 32px; line-height:28px; float: left; font-size: 14px; text-transform: uppercase; text-decoration: none;}
+/*第一屏板块*/
+#features-box{ padding-top: 20px; padding-bottom: 10px;}
+.features{ width: 990px; height: 380px; margin: 0 auto; }
+/*焦点图*/
+.focus{ width: 680px; height: 380px; float: left; position: relative; overflow: hidden;}
+.focus-img{height: 380px; position: relative;}
+.focus-img li{width: 680px; height: 380px; position: absolute; left: 0; top: 0;}
+.focus-img li .bar{ width: 460px; height: 69px; position: absolute; left: 0; bottom:20px;}
+.bar-title{ padding: 15px 20px 0 15px; font-size: 26px; line-height: 1; display: inline-block;}
+.bar-title a{font-size: 26px; text-decoration: none;}
+.bar-info{ padding: 5px 25px 5px 15px; display: inline-block;}
+.bar-info a{ text-decoration: none;}
+.indicator{ width: 120px; height: 16px; position: absolute; bottom: 10px; right: 0;}
+.indicator ul li{ width: 16px; height: 16px; float: left; margin-right: 10px; border-radius: 50%; text-align: center; color: #fff; line-height: 16px; font-size: 12px; cursor: pointer;}
+/*课程搜索*/
+.side-main{ width: 300px;height: 380px; float: right;}
+.course-search{ margin-bottom: 15px;}
+.course-search h2{ font-size: 18px; text-transform: uppercase;  padding-bottom: 10px; margin-bottom: 10px;}
+.course-search h2 a{ font-size: 18px; text-transform: uppercase;}
+.select{ height: 30px; margin:15px 5px 0 10px; }
+.select select{ width: 280px; height: 30px;}
+.language{margin:11px 10px 7px 10px; line-height: 36px;}
+.language-head{ font-size: 15px; font-style: italic;}
+.checkbox{ padding-left: 10px;}
+.checkbox input[type="checkbox"]{ margin-right: 3px;}
+.checkbox a{ text-decoration: none;}
+.search-input{ height:36px; padding: 15px; position: relative;}
+.search-input b{ display: block;
+    position: absolute;
+    left: 34px;
+    top: 0;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    border-width: 6px;
+    border-style: solid dashed dashed;
+    border-color: #fff5d1 transparent transparent;}
+.input-text{ float: left;width:234px; height: 36px;}
+.input-text input{ width:222px; height: 30px;}
+.input-btn{ float: right; width: 30px; height: 30px; padding-top: 3px;}
+.input-btn a{ display:block; width: 30px; height: 30px; border: none; border-radius: 50%; text-transform: uppercase; text-align: center; color:#fff; text-decoration: none; line-height: 30px;}
+/*通知公告*/
+.notice{ padding: 6px 8px 8px 11px; position: relative;}
+.news-page{ width: 45px; height: 17px; position: absolute; right: 7px; top:0;}
+.news-page span{ display: block; width: 22px; height: 17px;background:#ECD387 url(../images/sprite-g.gif)  no-repeat; cursor: pointer;}
+.news-page span:hover{ background-color: #e0c268;}
+.news-page .left{ background-position: 0 3px; float: left;}
+.news-page .right{ background-position: -22px 3px; float: right;}
+.notice h2{ font-size: 18px; line-height: 36px; text-transform: uppercase; padding-bottom: 5px;}
+.notice h2 a{ text-decoration: none; font-size: 18px; text-transform: uppercase;}
+.notice h2 a:hover{ text-decoration: underline;}
+.notice-body{ width: 280px; height: 62px; overflow: hidden;}
+.notice-body ul{ width: 5000px;}
+.notice-body ul li{ width: 280px; float: left;}
+.calendar{ width: 55px; height: 60px; float: left; }
+.calendar .day{font-size: 24px; text-align: center;}
+.calendar .month{ font-size: 17px; text-align: center;}
+.notice-main{float: right; line-height: 1;}
+.notice-main a{text-decoration: none;}
+.notice-main a:hover{ text-decoration: underline;}
+.notice-title{ margin-bottom: 5px;}
+/*3大信息板块*/
+.advantages{ margin-right: 23px;}
+.advantages .pic{background: url(../images/advantages.png) no-repeat;}
+.advantages_list{border-right: 1px solid #fff;}
+.advantages ul{ border-right: 1px solid #d6d6d6;}
+.programs{ margin-left: 22px;margin-right: 23px;}
+.programs_list{border-right: 1px solid #fff;}
+.programs_list ul{border-right: 1px solid #d6d6d6;}
+.programs .pic{background: url(../images/programs.png) no-repeat;}
+.service{margin-left: 22px;}
+.service .pic{background: url(../images/service.png) no-repeat;}
+.panel-box2{ background: #f2f2f2; padding: 10px 0;}
+.panel-main{ width: 990px; margin: 0 auto;}
+.panel-info{ width: 300px; height: 360px; float: left;}
+.panel-info h2{ font-size: 19px;}
+.panel-info h2 a{ font-size: 19px; text-decoration: none;}
+.panel-info ul li{ padding: 4px 0 4px 12px;}
+.panel-info ul li a{ font-size: 13px; color: #292726; text-decoration: none;}
+.panel-info ul li a:hover{ text-decoration: underline;}
+.panel-info .pic{ width: 300px; height: 169px;}
+/*footer*/
+.foot-connect{ height: 32px; line-height: 32px; padding: 6px 0;}
+.connect-head{float: left; padding: 0 10px 0 0;font-size: 16px;line-height: 32px}
+.connect-body{float: left;}
+.connect-body a{ display: block; float: left; width: 32px; height: 32px; margin-right: 10px; background-image: url(../images/share.png);}
+.facebook{ background-position: 0 0;}
+.twitter{ background-position:-33px 0;}
+.foot-main{ padding:30px 0;}
+.foot-nav{ line-height: 40px;}
+.foot-nav a{ margin: 0 10px;}
+.foot-nav a:first-child{ margin-left: 0;}
+.foot-panel{ float: left; }
+.foot-panel h2{ font-size: 8px; text-transform: uppercase; margin-bottom: 5px;}
+.foot-panel ul li{ padding: 3px 0 3px 10px;}
+.foot-panel ul li a{ font-size: 13px; text-decoration: none;}
+.foot-panel ul li a:hover{ text-decoration: underline;}
+.applicants{ width: 260px;}
+.current{ width: 260px;}
+.visitors{ width: 250px;}
+.help_center{ width: 220px;}
+.foot-bottom{ padding:10px 0;}
+.foot-nav a{ text-decoration: none;}
+.foot-share-box{ display: none;}
+/*--------------------------------------------------- 二级页面 -------------------------------------------------------*/
+/*面包屑*/
+.slip{ height: 36px; line-height: 36px;}
+.slip-center{ width: 1000px; margin: 0 auto;}
+.slip a{padding: 0 10px 0 20px;}
+.slip .icon-home{background: url(../images/slip-icon.gif) no-repeat 0 3px;}
+.slip .icon-arrow,.slip span{background: url(../images/slip-icon.gif) no-repeat -204px 3px;}
+.slip span{ padding-left: 20px;}
+
+#content{ width: 990px; margin: 0 auto;}
+/*why-us页面*/
+.minor-wrapper{ padding-top: 40px;}
+.major-title{ font-size: 28px; line-height: 40px; margin-bottom: 15px; text-transform: uppercase;}
+/*why-us 焦点图*/
+.hot-article-img{ width: 600px; height: 300px; float: left; background: #ccc;}
+.hot-article-img ul{ position: relative;}
+.hot-article-img ul li{ width: 600px; height: 300px; position: absolute; left: 0; top:0;}
+/*推荐文章信息*/
+.hot-article-main{ width: 370px; float: right;}
+.hot-main-info h2,.hot-main-info h2 a{ font-size: 15px; line-height: 1.2; margin-bottom: 10px; text-transform: uppercase; text-decoration: none;}
+.hot-info-body,.hot-info-body a{ line-height: 1.4; margin-bottom: 15px;text-decoration: none;}
+.why-indicator{ height: 24px;}
+.why-indicator ul{ float: left;}
+.why-indicator li{ width:22px; height:22px; text-align: center; line-height:22px; float: left; margin-right: 8px; cursor: pointer;}
+.why-indicator .play{ width: 24px; height: 24px; float: left;}
+/*why-us 第二屏信息板块*/
+/*左侧*/
+.sub-panel-items{ width: 700px;}
+.sub-panel-list{ width: 330px; height: 108px; overflow: hidden; margin-right: 20px; margin-bottom:40px; float: left;}
+.sub-panel-list .img{ width:76px; height: 60px; float: left; overflow: hidden; padding: 4px; border: 1px solid #ccc;}
+.sub-panel-list .img img{ height: 60px;}
+.sub-panel-list .main{ width: 230px; float: right;}
+.sub-panel-list .main h3{ padding-bottom: 5px;}
+.sub-panel-list .main h3 a{ text-decoration: none; font-size: 18px;}
+.sub-panel-list .main .info a{text-decoration: none; font-size: 12px;}
+/*侧边栏*/
+.sub-sidebar{ width: 200px;}
+.sidebar-list{ border-radius: 3px; padding: 15px;}
+.sidebar-list h3,.sidebar-list h3 a{ font-size: 18px; text-decoration: none;}
+.sidebar-list ul li a{ display: block; line-height: 20px; padding: 5px 0 5px 12px; text-decoration: none;}
+
+/*-------------------------------------------------文章详细阅读页-----------------------------------------------------*/
+.article-side{ width: 230px;}
+.sub-side-nav{padding-bottom: 10px; background: url(../images/side-nav-shadow.png) no-repeat left bottom;}
+.sub-side-nav h2{ font-size: 20px; padding: 10px 0; border-top: 1px solid #cdcdcd; border-bottom: 1px solid #cdcdcd;}
+.sub-side-nav ul li{ border-bottom: 1px solid #cdcdcd; line-height: 20px;}
+.sub-side-nav ul li a{ display: block; text-decoration: none; font-size: 14px; padding: 10px 0;}
+.sub-side-img{width: 230px; height: 136px; overflow: hidden; position: relative;}
+.sub-side-img img{width: 230px;}
+.side-img-bar{width: 230px; height: 30px; position: absolute; bottom:20px; left: 0;}
+.side-img-bar span{ display: block; display: inline-block; line-height: 30px; padding: 0 10px; font-size: 16px; text-transform: uppercase;}
+.article-main{ width: 740px;}
+.article-main-title{height: 30px;}
+.article-main-title span{ display: block; line-height: 30px; display: inline-block; font-size: 20px; padding: 0 10px; text-transform: uppercase;}
+.article-main-info{ padding: 20px 0; line-height: 1.5; font-size: 13px;}
+
+/*-------------------------------------------------新闻列表页-----------------------------------------------------*/
+.sub-highlights-main{ width: 650px; float: right;}
+.sub-highlights-main .notice-title a{ font-size: 16px; text-decoration: none;}
+.sub-highlights-main .notice-info a{ text-decoration: none;}
+.highlights-list ul li{ padding: 30px 10px; border-bottom: 1px dotted #ccc;}
+
+/*-------------------------------------------------精品课程-----------------------------------------------------*/
+.programs-switch-head ul{ height: 39px;}
+.programs-switch-head li{ height: 38px; padding:0 15px ; font-size: 14px; line-height: 38px; float: left; cursor: pointer;}
+.programs-switch-head li.active{ height: 40px; margin-top: -3px;}
+.programs-switch-body{  padding: 10px 10px; line-height: 1.5;}
+.programs-switch-body li .programs-body-list{ padding: 20px 0;}
+.programs-switch-body li .programs-body-list:last-child{ border: 0;}
+.jpkc-list-title{padding-bottom: 10px;}
+.jpkc-list-title a{ font-size: 18px; text-decoration: none; }
+.jpkc-list-table1{border-collapse: collapse; border-spacing: 0;}
+.jpkc-list-table1 th,.jpkc-list-table1 td{ padding: 8px;}
+.jpkc-btn{ float: left;}
+.jpkc-btn a{ font-size: 14px; text-decoration: none; line-height: 22px; padding:3px 10px;border-radius: 10px;}
+.jpkc-btn.consult{ margin-right: 10px;}
+.jpkc-list-explain{ padding-top:10px;}
+.jpkc-list-explain .jpkc-info{ text-decoration: none; line-height: 1.3;}
+.jpkc-list-explain .jpkc-more{ text-transform: uppercase; text-decoration: none;}
+
+/*-------------------------------------------------课程详细-----------------------------------------------------*/
+.programs-title{ height: 30px; margin-bottom: 10px;}
+.programs-title .programs-name{ width: 400px; line-height: 30px; float: left;}
+.programs-title .programs-name a{ font-size:28px; text-decoration: none;}
+.programs-btn{ float: right;}
+.programs-btn a{ display: block; float: left; font-size: 13px; text-transform:uppercase; padding: 3px 8px 3px 30px; text-decoration: none; border-radius: 10px; margin-right: 10px; position: relative;}
+.programs-btn a s{ display: block; width: 22px; height: 18px; position: absolute; left: 5px; top:1px;}
+.course-information{ margin-bottom: 20px;}
+.course-information th{ text-align: right;}
+.course-information th,.course-information td{ padding: 6px;}
+.programs-list-img{ text-align: center;}
+.introduce-detail li{ margin-bottom: 20px;}
+
+/*------------------------------------------------- 奖学金页面 ----------------------------------------------------*/
+.scholarship-list td{ padding: 1px;}
+.scholarship-list a{ text-decoration: none;}
+.scholarship-name{display: block; padding: 10px; font-size: 16px;}
+.scholarship-apply{ display: block; line-height: 40px; font-size: 18px; text-align: center;}
+
+/*------------------------------------------------- 常见问题页面 ----------------------------------------------------*/
+.FAQ-list a{ text-decoration: none;}
+.FAQ-list-main .FAQ-list-ask{ line-height: 20px; padding-bottom: 5px;}
+.FAQ-list-main .FAQ-list-ask a{ font-size: 16px; text-transform: uppercase;}
+.FAQ-list-main .FAQ-list-answer a{ color: #333; line-height: 1.2;}
+.FAQ-list-main .FAQ-list-answer span{ padding-right: 5px;}
+
+/*------------------------------------------------- 咨询表单页面 ----------------------------------------------------*/
+.consult-info{ padding: 10px;}
+.consult-title{ line-height:30px; font-size: 18px;}
+.consult-forms .control-group{border-top: 1px solid white;
+    border-bottom: 1px solid #EEE; line-height: 26px;}
+.consult-forms .control-group{padding: 10px 0;}
+.consult-forms .control-label { float: left; text-align: right;
+    width: 190px; font-weight: bold; font-size: 13px; line-height: 26px;
+}
+.consult-forms .cont-form { line-height: 26px;
+    margin-left: 200px;
+    font-size: 12px;
+}
+.consult-forms .cont-form input[type="text"]{ font-size: 12px;height: 20px; }
+.cont-form div.radio{ display: inline-block;margin-top: 2px; margin-right: 2px;}
+.cont-form lable.radio{ padding-right: 10px;}
+input[type="text"], textarea{border-radius: 3px; padding: 2px 5px;border: 1px solid #ccc;}
+select{border-radius: 3px; padding: 3px 5px;border: 1px solid #ccc;}
+.consult-info input[type="text"], .consult-info textarea, .consult-info select{ width:60%;}
+.submit{ border-radius: 3px; height: 28px; padding: 0 20px; border: 1px solid #fff;cursor: pointer;outline-color: #fff;
+}
+/*------------------------------------------------- 申请页面 ----------------------------------------------------*/
+.info-option{ line-height: 26px; padding: 3px 10px;}
+.info-option a{ text-decoration: none;}
+.programs-intent-tab td,.programs-intent-tab th{padding: 8px;}
+.register-form .cont-form input[type="text"],.register-form .cont-form textarea,.register-form .cont-form select{ width: 60%;}
+
+.form-prompt{ width: 80%; line-height: 1.5; padding: 10px 0; color: #f00;}
+.cont-form .social-media-option select{ width: 150px;}
+.h28{ height: 28px;}

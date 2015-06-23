@@ -1,0 +1,133 @@
+@charset "utf-8";
+/*
+版本：v=1
+制作人：李瑶琴
+时间：2015.05.26
+*/
+/*reset*/
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+body { font-family: "microsoft yahei"; color: #666; font-size: 12px;
+    /*-webkit-user-select: none;*/
+    /*-webkit-text-size-adjust: none;*/
+}
+body.mask-pop{ overflow: hidden;}
+header, section, footer {display: block; margin: 0; padding: 0;}
+img{ padding: 0; margin: 0; border: 0;}
+a { text-decoration: none; outline: 0;  cursor: pointer; color: #777;}
+button { outline: 0;   border: none;}
+button::-moz-focus-inner {  border: 0;}
+h1, h2, h3, h4, h5, h6 {  font-size: 100%;}
+ul, ol, li {   list-style: none;}
+img {  border: 0;}
+p, span, a {  -webkit-user-select: auto;}
+table {   border-collapse: collapse;  border-spacing: 0;}
+input {  outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+*:focus { outline: none;   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+a:link, a:visited { outline: none;}
+a:hover { outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+a:focus {  outline: none;   outline: none;   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    -webkit-text-stroke: none;}
+.l { float: left;}
+.r { float: right;}
+.clear { *zoom: 1;}
+.clear:after { content: '\0020';  display: block; height: 0; clear: both;}
+.hide{ display: none;}
+.show{ display: block;}
+.posit-r{ position: relative;}
+.pt80{ padding-top: 80px;}
+
+/*个人简历*/
+.screen{height: 600px;}
+.resume-box1{background: #e3e3e3; text-shadow: 1px 1px 1px #fff;}
+.auto{ width: 1200px; margin: 0 auto;}
+.resume{width: 472px; height: 130px; background: #e3e3e3; position: absolute; left :0; top:80px; z-index: 100;}
+.logo{ width: 387px; height: 82px; background: url(../images/resume.png) no-repeat; text-indent: -5000px; position:absolute; left: 0; top:0;}
+.en-resume{ width: 16px; height: 83px; background: url(../images/resume-en.png) no-repeat; position: absolute; right:40px; top:0;}
+.resume-info{ width: 387px;   height:34px; background: url(../images/resume-info.png) left bottom no-repeat; text-indent: -5000px;position:absolute; left: 0; top:82px; }
+.line-row{ height: 2px;background: url(../images/line-row.png) repeat; width: 25%; position: absolute; right: 50%; top:120px;z-index: 99; }
+.line-col{ width:2px;background: url(../images/line-col.png) repeat;position: absolute; left: 50%; top:121px; margin-left:-1px;z-index: 99;}
+
+.resume-round{ display: block; width: 22px; height: 22px; background:url(../images/resume-round.png) no-repeat; position: absolute; }
+.round1{top:120px;z-index: 101; left: 472px; margin-top:-11px;}
+.round2{top:310px;z-index: 101; left: 50%; margin-left:-11px;}
+.round3{top:560px;z-index: 101; left: 50%; margin-left:-11px;}
+
+/*基本信息--自我评价*/
+.my-info .title{ height: 36px; margin-bottom: 20px;}
+.evaluation{ width: 335px; height: 236px; position: absolute;top:550px;left: 50%; margin-left: 80px;z-index: 120;}
+.about{ width: 285px; height: 252px; position: absolute;top:310px;right: 50%; margin-right: 80px;z-index: 120; }
+.info-word{ line-height: 30px; font-size: 16px;}
+.evaluation .info-word{ padding-left: 52px;}
+.about .info-word{ text-align: right; padding-right: 55px;}
+
+.contact{ width: 320px; height: 150px; position: absolute; left:50%; top:80px;margin-left: 80px;}
+.contact li{ line-height: 36px; height: 36px; padding-left: 40px; position: relative; margin-bottom: 5px; font-size: 14px;}
+.contact li .icon{ display: block; width: 36px; height: 36px; background: url(../images/contact.png) no-repeat; position: absolute; top:0; left:0; background-size: 28px;}
+.contact li .icon.qq{ background-position: 4px 4px;}
+.contact li .icon.tel{ background-position: 3px -42px;}
+.contact li .icon.mail{ background-position: 4px -83px;}
+.contact li .text{ display: block; width: 130px; height: 36px; line-height: 36px; position: absolute; left:36px; top:0;}
+
+.arrow-down{ width: 135px; height: 128px; background: url(../images/arrow-down.png) no-repeat; position: absolute;  bottom: 60px; left: 10%;  }
+
+/**/
+.resume-box2{ background: #3eb7a4;}
+.box2-slide{ background: #1faf9b;position: absolute;z-index: 111;}
+.slide-col{ left: 150px; top:0; width: 16px; height: 160px;}
+.slide-row{left: 150px; top:160px; width: 280px; height: 16px;}
+.experience{ background: #3eb7a4;
+    width: 380px;
+    height: 60px; padding: 20px 40px; position: absolute; left: 50%; top:160px; margin-top: -40px; margin-left: -210px; z-index: 999;}
+.experience li{ width: 68px; height: 60px; float:left; margin-right: 25px; background: url(../images/experience.png) no-repeat;}
+.experience li.gong{ background-position: 0 0;}
+.experience li.zuo{ background-position: -92px 0;}
+.experience li.jing{ background-position: -186px 0;}
+.experience li.yan{ background-position: -279px 0;}
+
+.icon-experience{ width:1000px; height: 100px; overflow: hidden; /*position: absolute; left: 50%; top:70px; margin-left: -350px; z-index: 120;*/ margin:  80px auto 10px auto;}
+.icon-experience .icon{ display: block; width: 114px; height: 98px; float: left; position: relative; background-image: url(../images/icon_experience.png); background-repeat: no-repeat;}
+.experience1{ background-position: 0 0; margin-right: 250px;}
+.experience1 .xinhao{ display: block; width: 26px; height: 54px; background-repeat:no-repeat; position: absolute; right: 0; bottom: 0;}
+.experience2{ background-position: 0 -100px;margin-right: 250px;}
+.experience2 .wuqi{background: url(../images/icon_wuqi.png) left bottom no-repeat; opacity: .8; display: block; width: 40px; height: 41px; position: absolute; left:33px; bottom: 57px;}
+.icon.experience3{ width: 100px; height: 100px; background-position: 0 -200px;}
+
+.experience-head{ height: 200px;}
+.experience-midden{ height: 200px;}
+.experience-info-box{ color:#fff;}
+.experience-info-box:after{ display: block; content: ''; clear: both;}
+.sub-title{ font-size: 16px;}
+.light{font-size: 12px;}
+.experience-info{ width:350px; padding-right: 50px; float: left; line-height: 1.8; color:#d8fbf5;}
+.experience-info-head{ font-size: 20px; color:#fff;}
+.sub-title{ color:#8dd8ce;}
+
+/**/
+.resume-box3{ background: #b07c7c url(../images/resume_box3_bg.png) repeat-x; }
+.wave-top{height: 257px; background:#3eb7a4 url(../images/bg-wave-large.png) repeat-x; }
+.text-case{ width: 100px;background: url(../images/case_text.png) no-repeat; height: 100px; position: absolute; z-index: 222;}
+.text-an{left:20%; top:50px; background-position: left top;}
+.text-li{left:50%; top:0; background-position: right top;}
+.icon-case{display: block; width: 140px; height: 140px; overflow: hidden; border:3px solid #fff; border-radius: 50%; position: absolute;}
+.icon-case img{ display: block; width:100%;}
+.case1{left:0; top:160px;}
+.case2{  left: 20%; top: 330px;}
+.case3{  left: 40%;top: 160px;}
+.case4{  left: 690px; top: 290px;}
+.case5{  right: 10px;top: 50px;}
+.case6{  right: 0;top: 320px;}
+
+
+
+
+
+
+
+
+
+
+

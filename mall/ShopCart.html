@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<div class="sub-content" style="padding-bottom: 46px;">
+    <h1 class="posit-top">
+        <span>购物车</span>
+        <a class="history-back" href="javascript:history.back()"><img src="images/history-back.png" alt="返回"/></a>
+        <a class="btn delete" id="cart-del">删 除</a>
+    </h1>
+    <ul class="shp-cart-list" id="shp-cart-list">
+        <li>
+            <div class="check-wrapper check_style">
+                <span class="cart-checkbox checkbox" data-group="cart"></span>
+            </div>
+            <div class="items-list">
+                <div class="shipin-img">
+                    <a href="Details.html" target="_blank">
+                        <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                    </a>
+                </div>
+                <div class="shipin-info">
+                    <p class="pro-name"><a href="Details.html" target="_blank">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                    <p>返利：<span class="fanli">15.3</span></p>
+
+                    <p class="color_a8">(含运费<span class="freight-price">10</span>元)</p>
+
+                    <p class="text-red">￥<span class="price unit-price">218.90</span></p>
+                </div>
+            </div>
+            <div class="quantity-wrapper">
+                <input type="hidden" value="200">
+                <span class="quantity-decrease">-</span>
+                <input type="text" size="4" value="1" name="num" class="quantity" onchange=" ">
+                <span class="quantity-increase">+</span>
+            </div>
+        </li>
+        <li>
+            <div class="check-wrapper check_style">
+                <span class="cart-checkbox checkbox" data-group="cart"></span>
+            </div>
+            <div class="items-list">
+                <div class="shipin-img">
+                    <a href="Details.html" target="_blank">
+                        <img src="http://img.tuqipa.com/commodity/df211085a90241d09969005fafdbe7e9/main/e963d4b956d04c25abb85ac2bef31ad2.JPG"
+                             alt="新疆红枣"/>
+                    </a>
+                </div>
+                <div class="shipin-info">
+                    <p class="pro-name"><a href="Details.html" target="_blank">野花谷保康土蜂蜜礼盒装</a></p>
+
+                    <p>返利：<span class="fanli">20.86</span></p>
+
+                    <p class="color_a8">(含运费<span class="freight-price">10</span>元)</p>
+
+                    <p class="text-red">￥<span class="price unit-price">298.00</span></p>
+                </div>
+            </div>
+            <div class="quantity-wrapper">
+                <input type="hidden" value="200">
+                <span class="quantity-decrease disabled">-</span>
+                <input type="text" size="4" value="1" name="num" class="quantity" onchange=" ">
+                <span class="quantity-increase">+</span>
+            </div>
+        </li>
+        <li>
+            <div class="check-wrapper check_style">
+                <span class="cart-checkbox checkbox" data-group="cart"></span>
+            </div>
+            <div class="items-list">
+                <div class="shipin-img">
+                    <a href="Details.html" target="_blank">
+                        <img src="http://img.tuqipa.com/commodity/af111f82385f41e0b4d729ff2998a820/main/e6edc49f845940e78fb5475b5d0efc8b.jpg"
+                             alt="新疆红枣"/>
+                    </a>
+                </div>
+                <div class="shipin-info">
+                    <p class="pro-name"><a href="Details.html" target="_blank">陇南庄园橄榄油特级国产1000ml礼盒装</a></p>
+
+                    <p>返利：<span class="fanli">20.86</span></p>
+
+                    <p class="color_a8">(含运费<span class="freight-price">10</span>元)</p>
+
+                    <p class="text-red">￥<span class="price unit-price">305.00</span></p>
+                </div>
+            </div>
+            <div class="quantity-wrapper">
+                <input type="hidden" value="200">
+                <span class="quantity-decrease disabled">-</span>
+                <input type="text" size="4" value="1" name="num" class="quantity" onchange=" ">
+                <span class="quantity-increase">+</span>
+            </div>
+        </li>
+    </ul>
+    <div class="payment-total-bar" id="payment">
+        <div class="shp-chk check_style">
+            <span class="cart-checkbox checkbox-all" data-group="cart"></span>
+            全选
+        </div>
+        <div class="shp-cart-info">
+            <p class="font_sum">总计:￥<span class="cart_realPrice" id="total_price">0</span></p>
+
+            <p class="font_freight">(共<span class="cart_num" id="cart_num">0</span>件，含运费<span class="cart_fare" id="cart_fare">0</span>元)
+            </p>
+        </div>
+        <a class="btn-right-block" href="confirm.html">结算</a>
+    </div>
+    <div class="shop-cart-null">
+        <div class="shop-cart-icon"></div>
+        <p class="shop-cart-info">购物车还是空的，<br/>去挑几件中意的奇葩吧！</p>
+        <p class="text-center"><a href="#" class="btn">开始购物</a></p>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+        <div class="btn-quite tuijian"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+        <div class="btn-quite shopping active"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a><span class="shop-num">21</span></div>
+        <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+    </footer>
+</div>
+<script src="jQuery/jquery-1.11.0.min.js"></script>
+<script src="jQuery/base.js"></script>
+<script>
+    $(function () {
+        $('.sub-content').css('padding-top', $('.posit-top').height());
+        $('.check-wrapper').height($('.shp-cart-list li').height());
+        //购物车删除
+        $('#cart-del').on('click', function () {
+            $('.cart-checkbox.checked').parents('li').hide();
+        })
+
+        //购物车数量增加删除
+        $('.quantity[value=1]').siblings('.quantity-decrease').addClass('disabled');
+        $('.quantity-increase').on('click', function () {
+            var cartNum = $(this).siblings('.quantity').attr('value') - 0;
+            if (cartNum >= 1) {
+                $(this).siblings('.quantity-decrease').removeClass('disabled');
+            }
+            $(this).siblings('.quantity').attr('value', cartNum + 1);
+        })
+        $('.quantity-decrease').on('click', function () {
+            var cartNum = $(this).siblings('.quantity').attr('value') - 0;
+            cartNum--;
+            if (cartNum < 1) {
+                cartNum = 1;
+            }
+            $(this).siblings('.quantity').attr('value', cartNum);
+            if (cartNum == 1) {
+                $(this).addClass('disabled');
+            }
+        })
+        //为空
+        var cartLi = $('#shp-cart-list li').length;
+        console.log(cartLi);
+        if(cartLi == 0){
+            $('.shop-cart-null').show();
+            $('#shp-cart-list').hide();
+            $('#payment').hide();
+        }
+    })
+</script>
+</body>
+</html>

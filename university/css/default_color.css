@@ -1,0 +1,185 @@
+/*头部颜色*/
+#header{ border-top: 6px solid #c69201;}
+.mini-nav a{ color: #767474; }
+.mini-nav a:hover{ text-decoration: underline;}
+.mini-nav .student_services{ background:#c69201; color: #fff;}
+#nav{ background: #e9e9e9; border-bottom: 1px solid #c69201;}
+#nav li a{ border: 1px solid transparent;  color: #000;}
+#nav li a:hover{ background: #fff;  border: 1px solid #c69201; border-bottom: 1px solid #fff; border-radius: 3px 3px 0 0;}
+#nav li.active a{ background: #fff;  border: 1px solid #c69201; border-bottom: 1px solid #fff; border-radius: 3px 3px 0 0;}
+/*焦点图*/
+.bar-title{ background: #c69201; color: #fff;}
+.bar-title a{color: #fff;}
+.bar-info{ background: #3e3936 url(../images/sprite-g.gif) -340px -107px no-repeat; color: #fff;}
+.bar-info a{ color: #fff;}
+.indicator ul li{ background: #817e7c;}
+.indicator ul li.active{ background: #c69201;}
+/*课程搜索*/
+.course-search{ background: #fff5d1;}
+.course-search h2{ background: #fff; color: #a07601;}
+.select select{ background: #fff; border:1px solid #ddd;}
+.language-head{ color: #ab7e00;}
+.checkbox a{ color: #6c6565;}
+.search-input{ background: #ecd387;}
+.input-text input{ background: #fff; border: 3px solid #dab648;}
+.input-btn a{ background: #4c4c4c;}
+/*通知公告*/
+.calendar .day{ color: #c69201;}
+.calendar .month{color: #777673;}
+.notice{ border: 1px dashed #e2e2e2; background:#fff url(../images/notice-bg.gif) repeat;}
+.notice h2 a{color: #a37800;}
+.notice-title a{color: #C69201;}
+.notice-info a{ color: #333;}
+.calendar{background: #f0f0ed; border: 1px solid #dedede;}
+/*3大信息板块*/
+.panel-info h2{color: #a37800;}
+.panel-info h2 a{color: #a37800;}
+.panel-info h2 a:hover{ color: #c69201;}
+.panel-info ul li{ background:url(../images/sprite-g.gif) -494px 10px no-repeat;}
+.panel-info ul li a{color: #292726;}
+/*尾部*/
+.foot-connect{ background: #c7c3c1;}
+.foot-body{ background: #5b5754;}
+.foot-nav{ color: #cb9601;}
+.foot-nav a{color: #cb9601;}
+.footer-bottom{ background: #4a4643;}
+.foot-main{ background: #5b5754;}
+.foot-panel h2{ font-size: 18px; color: #fff;}
+.foot-panel ul li{background:url(../images/sprite-g.gif) -495px -52px no-repeat;}
+.foot-panel ul li a{ color: #e9e9e9;}
+.foot-bottom{ background: #4a4643;}
+.copyright{ color: #cb9601;}
+.copyright a{color: #cb9601;}
+
+/*--------------------------------------------------- 二级页面 --------------------------------------------------------*/
+/*面包屑*/
+.slip a{ color: #666; text-decoration: none;}
+.slip a:hover{color: #c69201;}
+.slip span{color: #c69201;}
+/*why-us页面*/
+.major-title{border-bottom: 1px solid #dbdbdb; color: #c69201; }
+/*推荐文章信息*/
+.hot-main-info h2,.hot-main-info h2 a{color: #c69201;}
+.hot-main-info h2 a:hover{ color: #dda404;}
+.hot-info-body,.hot-info-body a{ color: #666;}
+.why-indicator li{ border: 1px solid #bb8900; color:#c69201; }
+.why-indicator li.active{ background:#bb8900; color: #fff;}
+.why-indicator .play{ background: #d9d9d9 url(../images/play.png) no-repeat;}
+.why-indicator .play.stop{ background-position: -24px 0;}
+.hot-info-body a:hover{ color: #373737;}
+/*why-us 第二屏信息板块*/
+/*左侧*/
+.sub-panel-list .main h3 a{ color: #c69201; }
+.sub-panel-list .main h3 a:hover{ color: #996600;}
+.sub-panel-list .main .info a{ color: #666;}
+.sub-panel-list .main .info a:hover{ color: #c69201;}
+/*侧边栏*/
+.sub-sidebar{ width: 234px; float: right;}
+.sidebar-list{ background: #faf6e8; border:1px solid #e5d6ab;}
+.sidebar-list h3,.sidebar-list h3 a{ color: #C69201;}
+.sidebar-list h3 a:hover{ color: #996600;}
+.sidebar-list ul li{ border-top: 1px dotted #fff; border-bottom: 1px dotted #999;}
+.sidebar-list ul li a{ color: #666;background: url(../images/sprite-g.gif) -496px 12px no-repeat;}
+.sidebar-list ul li a:hover{ color:#c69201; }
+
+/*-------------------------------------------------文章详细阅读页-----------------------------------------------------*/
+.sub-side-nav h2{ border-top: 1px solid #cdcdcd; border-bottom: 1px solid #cdcdcd; color: #c69201;}
+.sub-side-nav ul li{ border-bottom: 1px solid #cdcdcd;}
+.sub-side-nav ul li.active{background:#f9f9f9 url(../images/sprite-g.gif) -489px 16px no-repeat; }
+.sub-side-nav ul li.active a{ padding-left: 18px; color: #c69201;}
+.sub-side-nav ul li a{ color: #333;}
+.sub-side-nav ul li a:hover{ color: #c69201;}
+.side-img-bar span{ background: #38372f; opacity: .9; color: #fff;}
+.side-img-bar span:hover{ background: #595959;}
+.article-main-title{ border-bottom: 4px solid #424a52;}
+.article-main-title span{ background: #424a52; color: #fff;}
+
+/*-------------------------------------------------新闻列表页-----------------------------------------------------*/
+.sub-highlights-main .notice-title a:hover{ color: #A37800;}
+.sub-highlights-main .notice-info a:hover{ color: #C69201;}
+.highlights-list ul li{ background: #f9f9f9;}
+.highlights-list ul li:hover{ background: #f2f2f2;}
+
+/*-------------------------------------------------精品课程-----------------------------------------------------*/
+.programs-switch-head li{ background: #f7f7f7; border-top: 1px solid #e3e3e3; border-left: 1px solid #fff; border-right: 1px solid #e3e3e3;}
+.programs-switch-head li:first-child{border-left: 1px solid #e3e3e3;}
+.programs-switch-head li.active{ background:#ffffff; color: #C69201; border: 1px solid #333333; border-top: 3px solid #333333; border-bottom: 1px solid #fff;}
+.programs-switch-body{ border: 1px solid #333;}
+.programs-switch-body li .programs-body-list{ border-bottom: 1px dotted #525252;}
+.jpkc-list-table1{ background: #d9d9d9;}
+.jpkc-list-table1 th{ background: #f3f3f3; border: 1px solid #d9d9d9;}
+.jpkc-list-table1 td{ background: #fff; border: 1px solid #d9d9d9;}
+.jpkc-btn a{ color: #fff;}
+.jpkc-btn.consult a{ background: #636060; }
+.jpkc-btn.apply a{ background: #c99400;}
+.jpkc-btn a:hover{ background: #333;}
+.jpkc-list-title a{ color: #333;}
+.jpkc-list-table1 td{ color:#A07601;}
+.jpkc-list-explain .jpkc-info{ color:#636060; }
+.jpkc-list-explain .jpkc-more{ color: #A07601;}
+.jpkc-list-explain .jpkc-more:hover{color:#c99400}
+
+/*-------------------------------------------------课程详细-----------------------------------------------------*/
+.course-information th{ background: #f4f4f4;}
+.course-information td{ color: #A07601;}
+.course-information th,.course-information td{border: 1px solid #dedede;}
+.programs-title .programs-name a{color:#A07601;}
+.programs-btn a{ color: #9e8470; border:1px solid #c7b8a9;background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e9e9e9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e9e9e9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e9e9e9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
+}
+.programs-btn a:hover{ background: #e9e9e9;}
+.programs-btn .consult s{background: url(../images/sprite-p.png) 0 0 no-repeat;}
+.programs-btn .apply s{background: url(../images/sprite-p.png) 0 -24px no-repeat;}
+.programs-btn .share s{background: url(../images/sprite-p.png) 0 -48px no-repeat;}
+
+/*------------------------------------------------- 奖学金页面 ----------------------------------------------------*/
+.scholarship-name{ background: #f2f2f2; color: #333;}
+.scholarship-name:hover{ background: #e9e9e9;}
+.scholarship-apply{ background: #e8d7a5;  color: #A07601;}
+.scholarship-apply:hover{ background: #333; color: #fff;}
+
+/*------------------------------------------------- 常见问题页面 ----------------------------------------------------*/
+.FAQ-list-main{ padding: 20px 5px; border-bottom: 1px solid #dddddd;}
+.FAQ-list-main .FAQ-list-ask a{ color: #A07601;}
+.FAQ-list-main .FAQ-list-answer a{ color: #333;}
+.FAQ-list-main .FAQ-list-answer a:hover{ text-decoration: underline;}
+.FAQ-list-answer span{ color: #c65001; font-weight: bold;}
+
+/*------------------------------------------------- 咨询表单页面 ----------------------------------------------------*/
+.consult-info{background-color: #F9F9F9; }
+.consult-title{ color: #C69201;}
+.consult-forms .control-label {color: #333;}
+.consult-forms .cont-form {  color: #666;}
+input[type="text"], textarea, select{ border: 1px solid #ccc;}
+.consult-info .submit{ color: #fff;background: #62c462; /* Old browsers */
+    background: -moz-linear-gradient(top,  #62c462 0%, #51a351 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62c462), color-stop(100%,#51a351)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #62c462 0%,#51a351 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #62c462 0%,#51a351 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #62c462 0%,#51a351 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #62c462 0%,#51a351 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62c462', endColorstr='#51a351',GradientType=0 ); /* IE6-9 */
+}
+.consult-info .submit:hover{ background:#51a351; }
+
+/*------------------------------------------------- 申请页面 ----------------------------------------------------*/
+.info-option a{ color: #333;}
+.info-option a:hover{ color:#C69201;}
+.info-option.active{ background:#C69201;}
+.info-option.active a{ color: #fff;}
+/*提示框*/
+.alert-info {margin: 10px 0;background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    color: #3A87AD;
+    padding: 10px;
+    line-height: 18px;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 13px;}
+

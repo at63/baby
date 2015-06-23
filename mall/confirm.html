@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<div class="sub-content">
+    <h1 class="posit-top">确认订单<a class="history-back" href="javascript:history.back()"><img
+            src="images/history-back.png" alt="返回"/></a></h1>
+    <div class="address-box">
+        <h2 class="adress_title">收货信息</h2>
+        <div class="address-items">
+            <div class="shipping-address" id="shipping-address">
+                <p class="personal-info">
+                    <span class="address_name">段云东</span>
+                    <span class="address_tel">13277325833</span>
+                </p>
+                <p class="adress_details">湖北省武汉市洪山区白沙洲大道106号
+                    鑫宇花园 中通公司</p>
+            </div>
+        </div>
+    </div>
+    <ul class="shp-cart-list">
+        <li>
+            <div class="check-wrapper">
+                <span class="cart-checkbox checkbox" data-group="pay"></span>
+            </div>
+            <div class="items-list">
+                <div class="shipin-img">
+                    <a href="Details.html">
+                        <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                    </a>
+                </div>
+                <div class="shipin-info">
+                    <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                    <p>返利：<span class="fanli">15.3</span></p>
+
+                    <p class="color_a8">(含运费<span class="freight-price">10</span>元)</p>
+
+                    <p class="text-red">￥<span class="price unit-price">218.90</span></p>
+                </div>
+            </div>
+            <div class="quantity-num">
+                <span class="goods-num">1</span>
+            </div>
+        </li>
+        <li>
+            <div class="check-wrapper">
+                <span class="cart-checkbox checkbox" data-group="pay"></span>
+            </div>
+            <div class="items-list">
+                <div class="shipin-img">
+                    <a href="Details.html">
+                        <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                    </a>
+                </div>
+                <div class="shipin-info">
+                    <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                    <p>返利：<span class="fanli">15.3</span></p>
+
+                    <p class="color_a8">(含运费<span class="freight-price">10</span>元)</p>
+
+                    <p class="text-red">￥<span class="price unit-price">218.90</span></p>
+                </div>
+            </div>
+            <div class="quantity-num">
+                <span class="goods-num">1</span>
+            </div>
+        </li>
+    </ul>
+    <div class="payment-total-bar" id="payment">
+        <div class="shp-chk">
+            <span class="cart-checkbox checkbox-all" data-group="pay" id="quanxuan" ></span>
+            全选
+        </div>
+        <div class="shp-cart-info" style="display: none;">
+            <p class="font_sum">总计:￥<span class="cart_realPrice" id="total_price"></span></p>
+            <p class="font_freight">(共<span class="cart_num" id="cart_num">1</span>件，含运费<span class="cart_fare" id="cart_fare">1</span>元)</p>
+        </div>
+        <a class="btn-right-block" href="OrderInformation.html">提交订单</a>
+    </div>
+    <div class="shadow-bg" id="shadow-bg"></div>
+    <div class="new-addr" id="new-addr">
+        <div class="addr-add"><a href="AddAddress.html">+添加收货地址</a></div>
+        <ul class="addr-info">
+            <li class="active">
+                <p class="font_s14"><span class="select-name">段云东</span> <span class="select-tel">13277325833</span> </p>
+                <p class="font_s12 select-info">湖北省武汉市洪山区白沙洲大道106号鑫宇花园中通公司</p>
+            </li>
+            <li>
+                <p class="font_s14"><span class="select-name">张三</span> <span class="select-tel">13333333333</span> </p>
+                <p class="font_s12 select-info">湖北省湖北省湖北省湖北省湖北省湖北省湖北省</p>
+            </li>
+            <li>
+                <p class="font_s14"><span class="select-name">李四</span> <span class="select-tel">15555555555</span> </p>
+                <p class="font_s12 select-info">武汉市武汉市武汉市武汉市武汉市武汉市</p>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+        <div class="btn-quite tuijian"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+        <div class="btn-quite shopping"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a><span class="shop-num">21</span></div>
+        <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+    </footer>
+</div>
+<script src="jQuery/jquery-1.11.0.min.js"></script>
+<script src="jQuery/base.js"></script>
+<script>
+    $(function () {
+        //地址弹出框
+        $('#shipping-address').on('click', function () {
+            $('#shadow-bg').show();
+            $('#new-addr').show();
+        })
+        $('#shadow-bg,.addr-info li').on('click', function () {
+            $('#shadow-bg').hide();
+            $('#new-addr').hide();
+        })
+        //地址选择
+        $('.addr-info li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            var $name = $(this).find('.select-name').html();
+            var $tel = $(this).find('.select-tel').html();
+            var $address = $(this).find('.select-info').html();
+            $('.personal-info .address_name').html($name);
+            $('.personal-info .address_tel').html($tel);
+            $('.adress_details').html($address);
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popular_Programs_Detail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/default_layout.css"/>
+    <link rel="stylesheet" href="css/default_color.css"/>
+</head>
+<body>
+<div class="slip">
+    <div class="slip-center">
+        <a class="icon-home" href="#">Home</a>
+        <a class="icon-arrow" href="#">Prospective Students</a>
+        <span>About the University</span>
+    </div>
+</div>
+<div id="content" class="padding-t20">
+    <div class="article-side fl-left">
+        <div class="sub-side-nav margin-b20">
+            <h2>Notices & highlights</h2>
+            <ul>
+                <li><a href="#">University Profile</a></li>
+                <li class="active"><a href="#">About the City</a></li>
+                <li><a href="#">Research Achievements</a></li>
+                <li><a href="#">Reputation</a></li>
+                <li><a href="#">Students Education</a></li>
+            </ul>
+        </div>
+        <div class="sub-side-img margin-b20">
+            <a href="#" target="_blank">
+                <img src="images/popular-programs.jpg" alt=""/>
+
+                <div class="side-img-bar"><span>Popular programs</span></div>
+            </a>
+        </div>
+        <div class="sub-side-img margin-b20">
+            <a href="#" target="_blank">
+                <img src="images/admission.jpg" alt=""/>
+
+                <div class="side-img-bar"><span>Admission</span></div>
+            </a>
+        </div>
+    </div>
+    <div class="article-main fl-right">
+        <h2 class="programs-title">
+            <span class="programs-name"><a href="#" target="_blank">MBBS</a></span>
+            <div class="programs-btn"><a class="consult" href="#"><s></s>Consult</a><a class="apply" href="#"><s></s>Apply</a><a class="share" href="#"><s></s>Share</a></div>
+        </h2>
+        <div class="course-information">
+            <table cellspacing="0" cellpadding="1" width="98%">
+                <tbody>
+                <tr>
+                    <th width="200">
+                        Teaching language
+                    </th>
+                    <td>English
+                    </td>
+                    <td class="programs-list-img" width="210" rowspan="7"><img src="images/programs-list1.jpg" width="200" alt=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Degree
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Duration
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Start date
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Tuition fee
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Application fee (RMB)
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Application fee (USD)
+                    </th>
+                    <td>English
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="programs-switching">
+            <div class="programs-switch-head introduce-title">
+                <ul>
+                    <li class="active">Course Overview </li>
+                    <li>Program advantages</li>
+                    <li>Entry requirements</li>
+                    <li>Program Objectives</li>
+                    <li>How to apply</li>
+                </ul>
+            </div>
+            <div class="programs-switch-body introduce-detail">
+                <ul>
+                    <li>总体概括Course Overview</li>
+                    <li>第一段Program advantages</li>
+                    <li>第二段Entry requirements</li>
+                    <li>第三段Program Objectives</li>
+                    <li>第四段How to apply</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.programs-switch-head ul li:first').addClass('active').siblings().removeClass('active');
+      //  $('.programs-switch-body ul li:first').show().siblings().hide();
+        $('.programs-switch-head ul li').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            var j = $(this).index();
+            $('.programs-switch-body ul li').eq(j).show().siblings().hide();
+        })
+        $('.programs-switch-head ul li:first').click(function(){
+            $('.programs-switch-body ul li').show();
+        })
+    })
+</script>
+</body>
+</html>

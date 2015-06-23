@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>微问卷 有金喜</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/pa.ui.min.js" charset="utf-8"></script>
+</head>
+<body style="-webkit-user-select: none;" class="bdbg">
+<div id="content">
+    <div class="result-main">
+        <img src="images/canyu_img1.jpg" alt=""/>
+    </div>
+    <div class="guajiang-box">
+
+        <div class="result-info">
+            <h1 class="result-info-head" id="result-title"></h1>
+
+            <p class="result-info-body" id="result-content">您的奖品是<span class="org_text" id="result-award"></span>，请您保持手机畅通，服务人员将主动联系您并赠送奖品。
+            </p>
+
+            <p class="result-info-foot" id="result-tips">若奖品递送时代理人联系不到本人，在三个工作日后自动取消中奖资格。</p>
+
+        </div>
+        <canvas class="canvas"></canvas>
+        <p class="guajiang-info">请将手指在灰色部分滑动，即可刮奖</p>
+    </div>
+</div>
+<script src="js/request.js"></script>
+
+<script>
+    $(function () {
+        var $resultTitle = $('#result-title').html('');
+        var $resultContent = $('#result-content');
+        var $resultAward = $('#result-award', $resultContent).html('');
+        var $resultTips = $('#result-tips').hide();
+
+        var resultData = {
+            '0': {title: '您的参与链接没有推荐人，无法参与活动!', award: '', tips: false},
+            '1': {title: '恭喜你中了特等奖!', award: '平安金喜（5g）', tips: true},
+            '2': {title: '恭喜你中了一等奖!', award: '貔貅纯金手链', tips: true},
+            '3': {title: '恭喜你中了二等奖!', award: '羊年吉祥玩偶', tips: true},
+            '4': {title: '恭喜你中了三等奖!', award: '平安新春福礼', tips: true},
+            '5': {title: '您已参加过该活动', award: '', tips: false},
+            '6': {title: '活动结束', award: '', tips: false},
+            '7': {title: '奖品已送完，请期待下期活动通知', award: '', tips: false}
+        };
+
+        var award = parseInt(request.QueryString('award'));
+        if (award === 0 || award > 7) {
+            $resultTitle.html(resultData[0].title);
+            $resultContent.html('');
+        } else {
+            var data = resultData[award];
+
+            if (data) {
+                $resultTitle.html(data.title);
+                $resultTips.toggle(data.tips);
+                switch (award) {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        $resultAward.html(data.award);
+                        break;
+                    case 5:
+                        var prizeType = parseInt(request.QueryString('prizeType'));
+                        if (prizeType > 0 && prizeType < 5) {
+                            $resultTitle.html(resultData[prizeType].title);
+                            $resultAward.html(resultData[prizeType].award);
+                        } else {
+                            $resultTitle.html(resultData[0].title);
+                            $resultContent.html('');
+                        }
+                        break;
+                    case 6:
+                        $resultContent.html('');
+                        alert(data.title);
+                        break;
+                    case 7:
+                        $resultContent.html('');
+                        alert(Date.title);
+                        break;
+                }
+            }
+        }
+    })
+</script>
+
+<script>
+    (function (bodyStyle) {
+        bodyStyle.userSelect =
+                bodyStyle.mozUserSelect =
+                        bodyStyle.webkitUserSelect = 'none';
+
+        var canvas = document.querySelector('.canvas');
+        var ctx;
+        var $res = $('.result-info');
+        var w = $res.outerWidth(true) - 30,
+                h = $res.outerHeight(true);
+        $('.guajiang-info').css('padding-top', h);
+        var offsetX = canvas.offsetLeft,
+                offsetY = canvas.offsetTop;
+
+        offsetX += canvas.parentNode.offsetLeft;
+        offsetY += canvas.parentNode.offsetTop;
+
+        var mousedown = false;
+        var sendDegree = false;
+
+        function layer(ctx) {
+            ctx.fillStyle = '#c0c4c5';
+            ctx.fillRect(0, 0, w, h);
+        }
+
+        function eventDown(e) {
+            e.preventDefault();
+            mousedown = true;
+        }
+
+        function eventUp(e) {
+            e.preventDefault();
+            mousedown = false;
+        }
+
+        function eventMove(e) {
+            e.preventDefault();
+            if (mousedown) {
+                if (localStorage && !sendDegree) {
+                    var winMob = localStorage.getItem('winMob');
+                    /*if (winMob) {
+                     var data = {winMob: winMob};
+                     $.ajax({
+                     //url: 'http://wap-stg.pingan.com.cn:8010/cms-tmplt/weixin/sxScratch.do',
+                     url: 'test/sxScratch.json',
+                     //dataType: 'jsonp',
+                     data: data,
+                     success: function (data) {
+                     if (data) {
+                     var rs = data['rs'];
+                     if (rs) {
+                     //do something...
+                     }
+                     }
+                     }
+                     })
+                     }*/
+                    sendDegree = true;
+                }
+                if (e.changedTouches) {
+                    e = e.changedTouches[e.changedTouches.length - 1];
+                }
+                var x = (e.clientX + document.body.scrollLeft || e.pageX) - offsetX || 0,
+                        y = (e.clientY + document.body.scrollTop || e.pageY) - offsetY || 0;
+                ctx.beginPath();
+                ctx.arc(x, y, 14, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        canvas.width = w;
+        canvas.height = h;
+        //canvas.style.backgroundImage = 'url(' + img.src + ')';
+        ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'transparent';
+        ctx.fillRect(0, 0, w, h);
+        layer(ctx);
+        ctx.font = "normal bold 50px 黑体";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = '#555251';
+        ctx.fillText("刮奖区", w / 2, h / 2);
+
+        ctx.globalCompositeOperation = 'destination-out';
+
+        canvas.addEventListener('touchstart', eventDown);
+        canvas.addEventListener('touchend', eventUp);
+        canvas.addEventListener('touchmove', eventMove);
+        canvas.addEventListener('mousedown', eventDown);
+        canvas.addEventListener('mouseup', eventUp);
+        canvas.addEventListener('mousemove', eventMove);
+
+    })(document.body.style);
+
+</script>
+<!--<script language="javascript" type="text/javascript">
+    var gDomain="sdc.pingan.com";  // SDC Production Mode Domain
+    var gDcsId="dcsii7safu620dmx9xh73688i_1h2b";
+    var gFpc="WT-FPC";
+    var gConvert=true;
+    var gWTIDJS=window.document.createElement("script");
+    window.document.getElementsByTagName("head")[0].appendChild(gWTIDJS);
+    if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)&&(document.cookie.indexOf("WTLOPTOUT=")==-1)){
+        gWTIDJS.src="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js";
+    }
+</script>-->
+<!--<script language="javascript" type="text/javascript">
+    setTimeout('setsdcjs()',0);
+    function setsdcjs(){
+        var jDomain="m.pingan.com";
+        var js_path="/app_js/sdc/prd/sdc_app.js";
+        var domain="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+jDomain;
+        var SDC_js=document.createElement("script");
+        SDC_js.src=domain+js_path;
+        var headElem=document.getElementsByTagName("head")[0];
+        headElem.appendChild(SDC_js);
+    }
+</script>-->
+</body>
+</html>

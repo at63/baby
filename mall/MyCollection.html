@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>我的收藏</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/base.css" media="screen"/>
+</head>
+<body>
+<div class="sub-content">
+    <h1 class="posit-top"><span>我的收藏</span> <a class="history-back" href="javascript:history.back()"><img src="images/history-back.png" alt="返回"/></a></h1>
+  <div class="margintop10">
+      <div class="tabs">
+          <a href="#" class="tab-but tab-but-1 tab-active">土特产</a>
+          <a href="#" class="tab-but tab-but-2">店铺</a> </div>
+      <div class="tab-content tab-content-1">
+        <ul class="chanpin-list-items ">
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/chanp.jpg" alt="新疆红枣"/> </a> </div>
+            <div class="shipin-info">
+              <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+              <p>净重：<span class="jingzhong">1000g</span></p>
+              <p>返利：<span class="fanli">15.3</span></p>
+              <p class="text-red">￥<span class="price">218.90</span></p>
+              <a href="" class="shop-car"></a> <a class="btn share">分享</a> </div>
+          </li>
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/chanp.jpg" alt="新疆红枣"/> </a> </div>
+            <div class="shipin-info">
+              <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+              <p>净重：<span class="jingzhong">1000g</span></p>
+              <p>返利：<span class="fanli">15.3</span></p>
+              <p class="text-red">￥<span class="price">218.90</span></p>
+              <a href="" class="shop-car"></a> <a class="btn share">分享</a> </div>
+          </li>
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/chanp.jpg" alt="新疆红枣"/> </a> </div>
+            <div class="shipin-info">
+              <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+              <p>净重：<span class="jingzhong">1000g</span></p>
+              <p>返利：<span class="fanli">15.3</span></p>
+              <p class="text-red">￥<span class="price">218.90</span></p>
+              <a href="" class="shop-car"></a> <a class="btn share">分享</a> </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content tab-content-2">
+        <ul class="chanpin-list-items ">
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/store.png" alt="店铺"/> </a> </div>
+            <div class="shipin-info">
+              <p class="store-name">凯年土家腊肉</p>
+              <p class="store_time">收藏时间:2015-04-02 10:25:14</p>
+            </div>
+          </li>
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/store.png" alt="店铺"/> </a> </div>
+            <div class="shipin-info">
+              <p class="store-name">凯年土家腊肉</p>
+              <p class="store_time">收藏时间:2015-04-02 10:25:14</p>
+            </div>
+          </li>
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/store.png" alt="店铺"/> </a> </div>
+            <div class="shipin-info">
+              <p class="store-name">凯年土家腊肉</p>
+              <p class="store_time">收藏时间:2015-04-02 10:25:14</p>
+            </div>
+          </li>
+          <li>
+            <div class="shipin-img"> <a href="#"> <img src="images/store.png" alt="店铺"/> </a> </div>
+            <div class="shipin-info">
+              <p class="store-name">凯年土家腊肉</p>
+              <p class="store_time">收藏时间:2015-04-02 10:25:14</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+    <footer class="footer" id="footer">
+        <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+        <div class="btn-quite tuijian"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+        <div class="btn-quite shopping"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a>
+            <span class="shop-num">21</span></div>
+        <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+    </footer>
+</div>
+<script src="jQuery/jquery-1.11.0.min.js"></script> 
+<script src="jQuery/base.js"></script>
+<script>
+$(function () {
+    $('.tab-but-1').click(function(){
+        $('.tab-but').removeClass('tab-active');
+        $('.tab-but-1').addClass('tab-active');
+        $('.tab-content').hide(100);
+        $('.tab-content-1').show(100);
+        return false;
+    });
+
+    $('.tab-but-2').click(function(){
+        $('.tab-but').removeClass('tab-active');
+        $('.tab-but-2').addClass('tab-active');
+        $('.tab-content').hide(100);
+        $('.tab-content-2').show(100);
+        return false;
+    });
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://wap-stg.pingan.com.cn:8010/c3/life/hd/1120/index.shtml -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>微问卷 有金喜</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/pa.ui.min.js" charset="utf-8"></script>
+    <script src="js/sdc_app.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="index-banner">
+        <div class="picture">
+            <img class="width-img" src="images/canyu_img1.jpg" alt="">
+        </div>
+        <div class="picture">
+            <img class="width-img" src="images/canyu_img2.jpg" alt="">
+        </div>
+        <div class="form-enter">
+            <form method="get" action="index2.html" id="get-form">
+                <p class="input-box">
+                    <input id="uid" name="id" maxlength="10" class="input-text gonghao-text" type="text"
+                           placeholder="输入您的工号，获取专属链接">
+                </p>
+                <p style="margin-bottom: 10px; padding-left: 10px;">项目测试:输入任意十位数字即可</p>
+                <p class="btn-submit" style="margin-bottom: 15px;">
+                    <input id="get-link" class="btn-bg" type="submit" value="确定">
+                </p>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/request.js"></script>
+<script>
+    var uid = request.QueryString('id');
+    if (uid) {
+        $('#uid').val(uid);
+    }
+    $('#get-link').click(function (e) {
+        var $uid = $('#uid');
+        var id = $.trim($uid.val());
+        if (id === '') {
+            alert('请输入工号');
+            return false;
+        }
+        if (!/^\d{10}$/.test(id)) {
+            alert('工号格式不正确');
+            return false;
+        }
+
+        $.ajax({
+            //url: 'http://wap-stg.pingan.com.cn:8010/cms-tmplt/weixin/sxCheckJobNum.do',
+            url: 'test/sxCheckJobNum.json',
+            //dataType: 'jsonp',
+            data: {jobNum: id},
+            success: function (data) {
+                console.log(data);
+                if (data) {
+                    if (data['rs'] == "true") {
+                        $('#get-form').submit();
+                    } else {
+                        alert(data['msg']);
+                        e.preventDefault();
+                    }
+                }
+            }
+        });
+        return false;
+
+    });
+</script>
+<!--<script language="javascript" type="text/javascript">
+    var gDomain = "sdc.pingan.com";  // SDC Production Mode Domain
+    var gDcsId = "dcsii7safu620dmx9xh73688i_1h2b";
+    var gFpc = "WT-FPC";
+    var gConvert = true;
+    var gWTIDJS = window.document.createElement("script");
+    window.document.getElementsByTagName("head")[0].appendChild(gWTIDJS);
+    if ((typeof(gConvert) != "undefined") && gConvert && (document.cookie.indexOf(gFpc + "=") == -1) && (document.cookie.indexOf("WTLOPTOUT=") == -1)) {
+        gWTIDJS.src = "http" + (window.location.protocol.indexOf('https:') == 0 ? 's' : '') + "://" + gDomain + "/" + gDcsId + "/wtid.js";
+    }
+</script>-->
+<!--<script language="javascript" type="text/javascript">
+    setTimeout('setsdcjs()', 0);
+    function setsdcjs() {
+        var jDomain = "m.pingan.com";
+        var js_path = "/app_js/sdc/prd/sdc_app.js";
+        var domain = "http" + (window.location.protocol.indexOf('https:') == 0 ? 's' : '') + "://" + jDomain;
+        var SDC_js = document.createElement("script");
+        SDC_js.src = domain + js_path;
+        var headElem = document.getElementsByTagName("head")[0];
+        headElem.appendChild(SDC_js);
+    }
+</script>-->
+
+</body>
+</html>

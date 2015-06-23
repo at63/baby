@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单查询</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<div class="sub-content">
+    <h1 class="posit-top">查询列表<a class="history-back" href="javascript:history.back()"><img src="images/history-back.png" alt="返回"/></a></h1>
+    <div class="order-list-items">
+        <ul>
+            <li>
+                <h3 class="order-title">
+                    <p class="status">已付款未发货</p>
+                    <p class="order-num">订单号：<span>15032797730</span></p>
+                </h3>
+                <div class="order-main">
+                    <dl>
+                        <dt><img src="images/order_msg_img1.jpg" alt="特级红枣"/></dt>
+                        <dd>
+                            <div class="shipin-info">
+                                <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+                                <p>净重<span>220</span>克</p>
+                                <p>返利：<span class="fanli">15.3</span></p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <p class="order-price">实收：<span class="text-red">￥100.29</span></p>
+                <a href="#" class="btn-receive">收货信息</a>
+                <div class="receive-info">
+                    <table width="100%">
+                        <tbody>
+                          <tr><th valign="top">收货地址：</th><td>湖北省武汉市洪山区白沙洲大道106号 鑫宇花园 中通公司</td></tr>
+                          <tr><th>收件人：</th><td>段云东</td></tr>
+                          <tr><th>联系电话：</th><td>13277325833</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="much">
+                <h3 class="order-title">
+                    <p class="status">已付款未发货</p>
+                    <p class="order-num">订单号：<span>15032797730</span></p>
+                </h3>
+                <div class="order-main">
+                    <dl>
+                        <dt><img src="images/order_msg_img1.jpg" alt="特级红枣"/></dt>
+                        <dd>
+                            <div class="shipin-info">
+                                <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+                                <p>净重<span>220</span>克</p>
+                                <p>返利：<span class="fanli">15.3</span></p>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/order_msg_img1.jpg" alt="特级红枣"/></dt>
+                        <dd>
+                            <div class="shipin-info">
+                                <p class="pro-name">新疆果园1000克新疆雪栆礼盒</p>
+
+                                <p>返利：<span class="fanli">15.3</span></p>
+
+                                <p class="color_a8">(含运费<span>10</span>元)</p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <p class="order-price">实收：<span class="text-red">￥100.29</span></p>
+                <a href="#" class="btn-receive">收货信息</a>
+                <div class="receive-info">
+                    <table width="100%">
+                        <tbody>
+                        <tr><th valign="top">收货地址：</th><td>湖北省武汉市洪山区白沙洲大道106号 鑫宇花园 中通公司</td></tr>
+                        <tr><th>收件人：</th><td>段云东</td></tr>
+                        <tr><th>联系电话：</th><td>13277325833</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+        <div class="btn-quite tuijian"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+        <div class="btn-quite shopping"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a><span class="shop-num">21</span></div>
+        <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+    </footer>
+    <script src="jQuery/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            //收货信息
+            $('.btn-receive').on('click', function () {
+                //$(this).next().toggleClass('active');
+                var $receive = $(this).siblings('.receive-info');
+                if(!$receive.hasClass('active')){
+                    $receive.addClass('active');
+                    $(this).html("收起");
+                }else if($receive.hasClass('active')){
+                    $receive.removeClass('active');
+                    $(this).html("收货信息");
+                }
+            })
+        })
+    </script>
+</div>
+</body>
+</html>

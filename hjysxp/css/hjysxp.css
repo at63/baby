@@ -1,0 +1,334 @@
+@charset "utf-8";
+/*
+版本：v=1
+制作人：liyaoqin
+时间：2013.12.08
+*/
+html { color:#fff;
+    font-size: 12px;
+}
+
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+
+body {font-family: "microsoft yahei"; background-color: #fff;
+    /*-webkit-user-select: none;*/
+    /*-webkit-text-size-adjust: none;*/
+}
+
+body.mask-pop{
+    overflow: hidden;
+}
+
+header, section, footer, img {
+    margin: 0;
+    padding: 0;
+}
+
+a { color: #666;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+span{ color: #fff;}
+
+button {
+    outline: 0;
+    border: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+
+p, span, a {
+    -webkit-user-select: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: none;
+}
+
+*:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: none;
+}
+
+a:link, a:visited {
+    outline: none;
+}
+
+a:hover {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: none;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.c{ clear: both;}
+.clear {
+    *zoom: 1;
+}
+
+.clear:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.color-yellow{ color: #ffd013;}
+#content{ position: relative;  height:5500px;  overflow: hidden;}
+.bg-main{ width: 1800px; position: absolute; left: 50%; top:-80px; margin-left: -900px; z-index: 1;}
+.bg-img{ height: 600px; background: no-repeat center top;}
+.bg-img.bg1{ background-image:url(../images/bg_img1.jpg);}
+.bg-img.bg2{ background-image:url(../images/bg_img2.jpg);}
+.bg-img.bg3{ background-image:url(../images/bg_img3.jpg);}
+.bg-img.bg4{ background-image:url(../images/bg_img4.jpg);}
+.bg-img.bg5{ background-image:url(../images/bg_img5.jpg);}
+
+.jijin-main{ width: 1070px; height: 4760px; position:absolute; left: 50%; top:0; margin-left: -500px; z-index: 10;
+    overflow: visible; padding-top: 100px;}
+.btn-ljrg{ display: block; width: 234px; height: 64px; background: #e90457; color: #fff; line-height: 64px;
+    font-size: 28px; font-weight: bold;text-align: center; overflow: visible; position: relative;}
+.btn-ljrg .line{ display: block; position: absolute; opacity:0; z-index: 1000; background-color: #fff; }
+.btn-ljrg .line-t{ width:200%; height: 0; left: -250%; top:0; }
+.btn-ljrg .line-r{ width: 0; height: 200%; right: 0; top:-300%;}
+.btn-ljrg .line-b{ width:200%; height: 0; left: 150%; bottom:0;}
+.btn-ljrg .line-l{ width: 0; height:200%; left: 0; top:250%;}
+.btn-ljrg:hover{ background-color: #d60350; color: #fff; text-decoration: none;}
+.btn-ljrg:hover .line{ opacity: 1;}
+.btn-ljrg:hover .line-t{ width: 100%;height: 2px; left: 0;}
+.btn-ljrg:hover .line-r{width: 2px; height: 100%; top: 0;}
+.btn-ljrg:hover .line-b{ width: 100%;height: 2px; left: 0;}
+.btn-ljrg:hover .line-l{  width: 2px; height: 100%; top: 0;}
+
+.jijin-head{width: 1070px; height: 440px; position: relative; margin-bottom: 200px;}
+.jijin-head-info{width: 388px; height: 275px; position: absolute; left: 0; top:0;
+    background: url(../images/head.png) 50px top no-repeat;}
+.jijin-head-jiangjin{width: 394px; height: 271px; position: absolute; left: 530px; top: 121px;
+    background: url(../images/head.png) right bottom no-repeat;}
+.head-fly{ z-index: 100;}
+.fly-big{ width: 390px; height: 307px;position: absolute; left: 365px; top:16px;}
+.fly-big-p{width: 311px; height: 249px; background: url(../images/fly-big.png) top right no-repeat;
+    position: absolute; right: 0; top:0; z-index: 100;}
+.fly-big-tail{width: 136px; height: 110px;position: absolute;left: 2px; top:195px;
+    background: url(../images/fly-tail.png) no-repeat;z-index: 99; }
+.fly-small{ width: 177px; height: 139px; background: url(../images/fly-small.png) no-repeat;
+    position: absolute; left: 793px; top: 278px; }
+.btn-head{position: absolute;  left: 55px; top:300px;}
+/*基金列表*/
+.jijin-list{width: 1070px; overflow: visible; position:relative; margin-bottom: 200px;}
+
+
+
+/*基金文字信息*/
+.jijin-info{ position: absolute; left: 76px; top:24px; z-index: 506; color: #fff;}
+.jijin-info h2{ font-size: 40px; color: #fff; line-height: 52px;}
+.jijin-info h2 a{ font-size: 40px; color: #fff; line-height: 52px;}
+.jijin-info .tit-explain{ line-height: 30px; font-size: 19px; padding-bottom: 22px; color: #fff;}
+.jijin-info .zhangfu{ line-height: 54px;height: 54px;}
+.jijin-info .zhangfu span{ display:block; float: left;}
+.jijin-line{ height: 6px; padding: 8px 0 10px 0;}
+.jijin-line img{ display: block; height: 6px;}
+.jijin-explain{ margin-bottom: 10px;}
+.jijin-explain,.jijin-explain p,.jijin-explain p span{ line-height: 32px; font-size: 14px;}
+.jijin-explain .keys{ padding-right: 10px;}
+
+/**/
+
+/*基金动画图片*/
+.jijin-img{ position: absolute;z-index: 20;}
+/*光大保德*/
+.jijin-list.gdbd{ height: 574px; background: none;}
+.gdbd .jijin-img{ width: 428px; height: 572px; left: 10px; top:22px;}
+.gdbd-img-p{width: 119px; height: 572px; position:absolute; left: 147px; top:0; z-index: 102;
+    background: url(../images/jijin-gdbd.png) no-repeat;}
+.gdbd-wing{height: 307px;position: absolute;top:38px;z-index: 101; }
+.gdbd-wing.left{ width: 213px;   left: 0; background: url(../images/wing-left.png) no-repeat;}
+.gdbd-wing.right{ width: 215px; left: 213px; background: url(../images/wing-right.png) no-repeat;
+}
+.jijin-list.gdbd .jijin-info{ left: 464px; top:74px;}
+
+
+/*大摩多因子*/
+.jijin-list.dmdyz{ height: 426px; }
+.dmdyz .jijin-img{ width: 490px; height:425px; position: absolute; left: 460px; top:0px;
+    background: url(../images/jijin-dmd.png) no-repeat;}
+.dmdyz-zd-s{width: 389px; height:142px; position: absolute; left: 60px; top:162px;}
+.dmdyz-zd-s img{ width: 100%; }
+.dmdyz-zd-l{width: 114px; height:76px; position: absolute; left:0; top:192px;
+    background: url(../images/dmd-zd-l.png) no-repeat;}
+.dmdyz-zd-r{width: 113px; height:78px; position: absolute; left: 379px; top:227px;
+    background: url(../images/dmd-zd-r.png) no-repeat;}
+
+/*富国天成*/
+.jijin-list.fgtc{ height: 458px; margin-bottom: 160px;}
+.fgtc .jijin-img{ width:511px; height:458px; left: 456px; top:0;  }
+.fgtc-img-m{ position: absolute; left: 0;top:0; z-index: 22;}
+.fgtc-img-fire{ width: 115px; height: 59px; position: absolute; left:2px;top:262px; z-index: 21;}
+.fgtc-img-m img,.fgtc-img-fire img{ width: 100%;}
+/*中欧新蓝筹*/
+.jijin-list.zoxlc{ height: 596px;}
+.jijin-list.zoxlc .jijin-info{ left: 550px; top:112px;}
+.zoxlc .jijin-img{ width:491px; height:597px; left: 10px; top:0px;}
+.zoxlc-img-p{width:491px; height:597px; background: url(../images/jijin-zo.png) no-repeat; z-index: 10;
+    position: absolute;  left:0; top:0; }
+.zoxlc-img-snow1{width: 145px; height: 149px; background: url(../images/snowflake.png) no-repeat; z-index: 9;
+    position: absolute;left:271px; top:53px;  }
+.zoxlc-img-snow2{width: 108px;z-index: 11;  position: absolute; left:386px; top:392px; }
+.zoxlc-img-snow2 img{ width: 104px; }
+.zoxlc-img-snow3{width: 64px; z-index: 12; position: absolute;  left: 152px;  top: 408px;}
+.zoxlc-img-snow3 img{ width:58px;  }
+
+/*易方达*/
+.jijin-list.yfd{ height: 686px; left: 56px;}
+.jijin-list.yfd .jijin-info{ left: 0; top:250px;}
+.jijin-list.yfd .jijin-info h2{ width: 400px;}
+.yfd .jijin-img{ width:655px; height:690px; position: absolute; right: 0; top:0;}
+.yfd-img-p{ width:499px; height:555px; background: url(../images/jijin-yfd.png) no-repeat; z-index: 100;
+    position: absolute; left: 0; top:188px;}
+.yfd-img-son{width:523px; height:509px;z-index: 99;position: absolute; left: 143px; top:13px;
+    background: url(../images/yfd-sun.png) no-repeat;}
+
+
+/*建信双息红利债券*/
+.jijin-list.jxsx{ height: 496px;}
+.jxsx .jijin-img{ width:549px; height:433px; position: absolute; left: 0; top:0;}
+.jxsx-img-p{ width:549px;height:425px; position: absolute; left: 0; top:0; z-index: 21; text-align: center;}
+/*.jxsx-fire1{width:549px; height:299px; position: absolute; left: 0; top:-68px; z-index: 20;
+  background: url(../images/jxsx-fire1.png) no-repeat;}
+.jxsx-fire{ width:409px; height:177px;background: url(../images/jxsx-fire2.png) no-repeat;
+position: absolute; left: 62px; top:242px; z-index: 22;}*/
+.jijin-list.jxsx .jijin-info{ left: 584px; top:34px;}
+
+
+/*申购攻略*/
+.sggl-box{width: 871px;  height: 255px; position:relative; margin: 0 auto;}
+.panel-sggl{ width: 791px; height: 201px; background: url(../images/sggl.jpg) no-repeat; position: absolute; top:0;
+    left:0; padding: 20px 40px; color: #fff;}
+.panel-sggl h2{font-size: 40px;  color: #fff;  line-height: 52px; padding-bottom: 22px;}
+.panel-sggl p{ font-size: 16px; line-height: 30px; padding-left: 25px;}
+.sggl-time{ width: 520px;background: url(../images/ordered.png) 0 5px no-repeat; }
+.sggl-info{ width: 440px;background: url(../images/ordered.png) 0 -54px no-repeat;}
+.sggl-shadow{ width: 871px; height: 14px;background: url(../images/shadow.png) no-repeat;  position: absolute;
+    top:241px; left:0;}
+.sggl-fly{ width: 437px; height: 259px; background: url(../images/sggl-fly.png) no-repeat;position: absolute; bottom:6px;
+    right:-75px; z-index: 500;}
+
+/*认购弹窗*/
+.tips-backshadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    z-index: 999;
+    filter: alpha(opacity = 60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -webkit-opacity: 0.6;
+    opacity: 0.6;
+    display: none;
+}
+.tips-rengou{ width: 475px; height: 254px; background: url(../images/tips_rengou.jpg) no-repeat; position: fixed;
+    left: 50%; margin-left: -238px; top:140px;z-index: 9999; display: none;}
+.tips-head{ font-size: 20px; background:url(../images/gantanhao.png) 28px 38px no-repeat; line-height: 30px;
+    padding: 30px 0 0 90px;}
+.btn-rengou{ width: 148px; height: 36px; line-height: 36px; font-size: 16px; color: #fff; text-decoration: none;
+    text-align: center; position: absolute; left: 30px;}
+.btn-rengou:hover{ color: #fff; text-decoration: none;}
+.btn-rengou.success{ background: #ea0458; top:138px;}
+.btn-rengou.success:hover{background-color: #d60350;}
+
+.btn-rengou.fail{ background: #4f4f4f; top:183px;}
+.btn-rengou.fail:hover{background-color: #5f5f5f;}
+
+/*认购成功跳转页面*/
+#rengou-bg{min-width: 1000px; height: 600px; background: url(../images/rengou_bg.jpg) center top no-repeat;}
+.rengou-main{ width: 980px; height: 600px;  margin: 0 auto; position: relative;}
+.rengou-main-info{ width: 608px; position: absolute; top:70px; left: 40px; z-index: 101;}
+.rengou-main-info h2{font-size: 32px;  color: #fff;  line-height: 52px;margin-bottom: 20px;}
+.rengou-btn{display: block;
+    width: 234px;
+    height: 64px;
+    background: #e90457;
+    color: #fff;
+    line-height: 64px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;}
+.rengou-btn:hover{background-color: #d60350; color: #fff;}
+.rengou-share{ width: 280px; height: 44px; padding: 19px 5px 20px 40px; margin-bottom: 15px;
+    background:url(../images/bg_ljfx.png) left top no-repeat;}
+.rengou-more-jijin{ width: 500px; line-height: 22px; color: #fff; font-size: 13px;}
+.rengou-more-jijin a{ display: inline-block; margin-right: 10px; color: #fff; text-decoration: underline;}
+
+.rengou-main-img{ position: absolute; z-index: 100; display: none;}
+.rengou-main-img.dmdyz{ width: 493px; height: 428px;right:17px; top:87px;
+    background:url(../images/rengou_dmdyz.jpg) right top no-repeat;}
+.rengou-main-img.gdbd{width: 440px; height: 515px; background:url(../images/rengou_gdbd.jpg) right top no-repeat;
+    right:31px; top:85px;}
+.rengou-main-img.fgtc{width: 512px; height: 460px;right:0; top:85px; }
+.rengou-main-img.fgtc .jijin-img{ left: 0; top:0;}
+.rengou-main-img.zoxlc{width: 385px; height: 486px;background:url(../images/rengou_zoxlc.jpg) right top no-repeat;
+    right:63px; top:65px; }
+.rengou-main-img.yfdbp{width: 559px; height: 539px; background:url(../images/rengou_yfd.jpg) right top no-repeat;
+    right:0; top:0;}
+.rengou-main-img.jxsx{width: 485px; height: 415px;background:url(../images/rengou_jxsx.jpg) right top no-repeat;
+    right:17px; top:87px; }
+
+/*公共*/
+.p_r10{padding-right: 10px;}
+.p_b8{padding-bottom: 8px;}
+.f_s42{ font-size: 42px;}
+.f_s14{ font-size: 14px;}
+.f_s18{ font-size: 18px;}
+.c_org{ color: #ffd651;}
+.line-meteor{width: 300px; height: 1px; background-color: #dad5ff; position: absolute; top:0; left: 50%;
+    -webkit-transform:rotate(-20deg); z-index: 999; -webkit-animation:meteor1 0.6s linear infinite alternate;}

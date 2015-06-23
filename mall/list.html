@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script>
+        var request = {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+    </script>
+</head>
+<body>
+ <div class="sub-content">
+     <h1 class="posit-top"><span>商品列表</span> <a class="history-back" href="javascript:history.back()"><img src="images/history-back.png" alt="返回"/></a></h1>
+     <div class="list_total">
+         <ul class="chanpin-list-items ">
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒1</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img03.taobaocdn.com/bao/uploaded/i3/T1DvXRFyxpXXXXXXXX_!!0-item_pic.jpg_b.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒2</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img04.taobaocdn.com/bao/uploaded/i4/TB17JEgHpXXXXaRXFXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒3</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img03.taobaocdn.com/bao/uploaded/i3/TB14i1HFFXXXXXZaXXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒4</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒5</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img01.taobaocdn.com/bao/uploaded/i3/TB1uIb9HpXXXXcvaXXXSutbFXXX.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒6</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img02.taobaocdn.com/imgextra/i2/754076466/TB29DlXcpXXXXcSXXXXXXXXXXXX_!!754076466.jpg_Q75.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒7</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img04.taobaocdn.com/imgextra/i4/1658092233/TB2Ao0rcpXXXXbmXpXXXXXXXXXX_!!1658092233.jpg_Q75.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒7</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img03.taobaocdn.com/imgextra/i3/1084534099/TB2HgJDcXXXXXXoXXXXXXXXXXXX_!!1084534099.jpg_Q75.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒7</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="shipin-img">
+                     <a href="Details.html">
+                         <img src="http://img04.taobaocdn.com/imgextra/i4/2087715324/TB2zDfBcXXXXXbAXpXXXXXXXXXX_!!2087715324.jpg_Q75.jpg" alt="新疆红枣"/>
+                     </a>
+                 </div>
+                 <div class="shipin-info">
+                     <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒7</a></p>
+
+                     <p>净重：<span class="jingzhong">1000g</span></p>
+
+                     <p>返利：<span class="fanli">15.3</span></p>
+
+                     <p class="text-red">￥<span class="price">218.90</span></p>
+                     <a href="" class="shop-car"></a>
+                     <a class="btn share">分享</a>
+                 </div>
+             </li>
+         </ul>
+         <p class="chanpin-list-more">更多...</p>
+     </div>
+     <footer class="footer" id="footer">
+         <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+         <div class="btn-quite tuijian active"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+         <div class="btn-quite shopping"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a><span class="shop-num">21</span></div>
+         <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+     </footer>
+ </div>
+
+ <div class="shadow-bg" id="shadow-bg"></div>
+ <!-- 分享层 -->
+ <div class="share-box" id="share-box">
+     <div class="share-main">
+         <h3 class="share-title">分享商品赚佣金</h3>
+         <div class="share-items">
+             <div class="bdsharebuttonbox">
+                 <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信好友</a>
+                 <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ</a>
+                 <a href="#" class="bds_qzone"  data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+                 <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                 <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+                 <a href="#"  class="bds_mail" data-cmd="mail" title="分享到邮件分享">邮件</a>
+                 <style>
+                     .bdshare-button-style0-32 a{display: block;
+                         margin:0 0 14px 0; text-indent: 0; font-size: 12px; color: #777;
+                         text-align: center;
+                         width: 33.3%;
+                         float: left;  background: url(images/share_items.jpg) no-repeat; height:18px; line-height: 18px; padding-top: 45px;  background-size: 45px auto;}
+                     .bdshare-button-style0-32 .bds_weixin{  background-position: center 0;}
+                     .bdshare-button-style0-32 .bds_sqq {  background-position: center -139px;}
+                     .bdshare-button-style0-32 .bds_qzone{  background-position: center -210px;}
+                     .bdshare-button-style0-32 .bds_tsina{  background-position: center -350px;}
+                     .bdshare-button-style0-32 .bds_tqq{  background-position: center -280px;}
+                     .bdshare-button-style0-32 .bds_mail{  background-position: center -420px;}
+                 </style>
+             </div>
+             <script>window._bd_share_config = {
+                 "common": {
+                     "bdSnsKey": {},
+                     "bdText": "",
+                     "bdMini": "2",
+                     "bdMiniList": false,
+                     "bdPic": "",
+                     "bdStyle": "0",
+                     "bdSize": "32"
+                 },
+                 "share": {},
+                 /*"image": {
+                  "viewList": ["weixin", "sqq", "qzone", "tsina", "tqq", "mail"],
+                  "viewText": "分享到：",
+                  "viewSize": "16"
+                  },*/
+                 "selectShare": {
+                     "bdContainerClass": null,
+                     "bdSelectMiniList": ["weixin", "sqq", "qzone", "tsina", "tqq", "mail"]
+                 }
+             };
+             with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+         </div>
+         <p class="share-cancel" id="share-cancel">取消</p>
+     </div>
+ </div>
+ <!-- 分享层 end-->
+ <script src="jQuery/jquery-1.11.0.min.js"></script>
+ <script src="jQuery/base.js"></script>
+ <script>
+     $(function () {
+         var uID = request.QueryString('id');
+         var names = {
+             "1": "精品推荐",
+             "2": "猜你喜欢",
+             "3": "宝宝服饰",
+             "4": "风土民俗",
+             "5": "健康养生"
+         }
+         $('.posit-top span').html(names[uID]);
+     })
+
+     //产品列表更多
+     $('.list_total li:gt(8)').hide();
+     var listLength = $('.list_total li').length;
+     if( listLength <= 8 ){
+         $('.list_total .chanpin-list-more').hide();
+     }else{
+         $('.list_total .chanpin-list-more').show();
+     }
+     $('.chanpin-list-more').click(function () {
+         $(this).hide();
+         $('.list_total li:gt(8)').show();
+     })
+ </script>
+</body>
+</html>

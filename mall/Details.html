@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>红枣</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body class="bg-gray">
+<div class="sub-content center pb50">
+    <h1 class="posit-top">商品详情<a class="history-back" href="javascript:history.back()"><img
+            src="images/history-back.png" alt="返回"/></a></h1>
+
+    <div class="detail-focus">
+        <div class="detail-img posit-r">
+            <ul>
+                <li><img src="http://gi4.md.alicdn.com/imgextra/i4/2076795027/TB2OiuHcXXXXXbvXXXXXXXXXXXX_!!2076795027.jpg_430x430q90.jpg" alt=""/></li>
+                <li><img src="http://gi1.md.alicdn.com/imgextra/i1/2076795027/TB2y11WcpXXXXabXpXXXXXXXXXX_!!2076795027.jpg_430x430q90.jpg" alt=""/></li>
+                <li><img src="http://gi3.md.alicdn.com/imgextra/i3/1652275522/TB2RjVDbXXXXXc9XXXXXXXXXXXX_!!1652275522.jpg_430x430q90.jpg" alt=""/></li>
+            </ul>
+            <a href="ShopCart.html" class="float-shop-car">
+                <img src="images/float-shop-car.png" alt="购物车"/>
+                <span class="shop-num">1</span>
+            </a>
+        </div>
+        <div class="focus-bar">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="product-main">
+        <div class="details-border posit-r">
+            <div class="detail-name-l">
+                <p>
+                    <span class="detail-price">￥28.90</span>
+                    <!--<span class="text-gray">（原价：35.00）</span>
+                    <span class="xsth">限时特惠</span>-->
+                </p>
+
+                <p class="details-name">新疆果园1000克新疆雪栆礼盒新疆雪栆礼盒</p>
+            </div>
+            <p href="#" class="detail-collect">
+                <i class="icon"></i>
+                <span class="text-sc">加入收藏</span>
+            </p>
+        </div>
+        <div class="details-border">
+            <p>返利：<span class="text-green">5.5</span><span class="font_s9">（交易成功后返还到个人用户）</span></p>
+
+            <p>运费：0.00元</p>
+
+            <p>克重：418g</p>
+        </div>
+        <div class="details-border posit-r line-h30">
+            <p class="font-style-s" id="location-tips">送至：
+                <span class="font-province">湖北省</span>><span class="font-city">武汉市</span>
+                <span class="address-location"><img src="images/location.png" alt=""/></span>
+            </p>
+
+            <div class="region-selection" id="region-selection">
+                <h2 class="title">配送至</h2>
+
+                <p class="select-locate select-province" id="select-province">
+                    <span>湖北省</span>
+                    <span>湖南省</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                </p>
+
+                <p class="select-locate select-city" id="select-city">
+                    <span>武汉</span>
+                    <span>长沙</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                </p>
+            </div>
+        </div>
+        <div class="details-border list-entry"><i class="icon product-details"></i>特产介绍</div>
+        <div class="details-border list-entry"><i class="icon appraisal"></i>购买评价 <span class="detail-pj">8650人评价</span>
+        </div>
+        <div class="details-border list-entry"><i class="icon my-shop"></i>H51的特产小铺</div>
+        <div class="detail-recommend">
+            <h3 class="detail-rec-head">奇葩推荐</h3>
+            <dl>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+                <dd><img src="images/order_msg_img1.jpg" alt=""/></dd>
+            </dl>
+        </div>
+        <div class="middle-img">
+            <img src="images/middle_img.jpg" alt="">
+        </div>
+    </div>
+    <div class="btn-bottom-items">
+        <a class="btn-bottom detail-buy" href="confirm.html">购买</a>
+        <a class="btn-bottom detail-shop shop-text" href="#"><i class="icon-shop-car"></i><span
+                class="">加入购物车</span></a>
+        <a class="btn-bottom detail-share" href="#">分享</a>
+    </div>
+</div>
+<div class="shadow-bg" id="shadow-bg"></div>
+<script src="jQuery/jquery-1.11.0.min.js"></script>
+<script src="jQuery/base.js"></script>
+<script>
+    $(function () {
+        //详情焦点图高度
+        $('.detail-img li').width($('.detail-img').width());
+        //焦点图滚动
+        var leftWidth = '-='+ $('.detail-img').width();
+        var i = 0;
+        var dotLength = $('.detail-img li').length;
+        for( j = 0 ; j < dotLength ; j ++ ){
+            $('.focus-bar ul').append('<li></li>');
+        }
+        $('.focus-bar ul li:first').addClass('active');
+        var imgLength = $('.detail-img li').length - 1;
+        var focusMove = function () {
+            $('.detail-img ul li:first').animate({marginLeft:leftWidth},'fast', function () {
+                $(this).appendTo($('.detail-img ul')).css('margin-left',0);
+            })
+            i ++ ;
+            if( i > imgLength){
+                i = 0;
+            }
+            $('.focus-bar li').eq(i).addClass('active').siblings().removeClass('active');
+        }
+        setInterval(focusMove,3000);
+        //加入收藏
+        $('.detail-collect').on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active').find('.text-sc').html('加入收藏');
+            } else {
+                $(this).addClass('active').find('.text-sc').html('取消收藏');
+                // $(this).find('.text-sc').html('取消收藏');
+            }
+        })
+        //定位弹窗
+        $('#location-tips').on('click', function () {
+            $('#region-selection,#shadow-bg').show();
+        })
+        $('#select-province span').on('click', function () {
+            var proHtml = $(this).html();
+            $(this).parents('.region-selection').siblings('.font-style-s').find('.font-province').html(proHtml);
+            $('#select-province').hide();
+            $('#select-city').show();
+        })
+        $('#select-city span').on('click', function () {
+            var cityHtml = $(this).html();
+            $(this).parents('.region-selection').siblings('.font-style-s').find('.font-city').html(cityHtml);
+            $('#select-province').show();
+            $('#region-selection,#select-city,#shadow-bg').hide();
+        })
+    })
+</script>
+</body>
+</html>

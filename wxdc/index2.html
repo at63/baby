@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>微问卷 有金喜</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/pa.ui.min.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="link-head">
+        <div class="link-back">
+            <a href="javascript:history.back()">返回</a>
+        </div>
+        分享链接
+    </div>
+    <div class="link-body">
+        <div class="link-body-title">您的专属链接：点击将直接跳转至答题页，长按可复制</div>
+        <p class="link-area"></p>
+    </div>
+</div>
+<script src="js/request.js"></script>
+<script>
+    var uid = request.QueryString('id');
+    if (uid) {
+        var args = "cj.html?id=" + uid;
+        var html = "http://www.kuyae.com/wxdc/index2.html?id="+uid;
+        var newhtml = "<a href='"+args+"' target='_blank'>"+html+"</a>";
+        $('.link-area').html(newhtml);
+        $('.link-back>a').attr('href',"index.html?id="+uid);
+    }
+</script>
+</body>
+</html>

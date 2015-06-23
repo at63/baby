@@ -1,0 +1,341 @@
+/* CSS Document */
+body {
+	color: #666;
+	font-family: STHeiti Light, Microsoft YaHei, sans-serif, Helvetica, Tahoma;
+	-webkit-font-smoothing: antialiased;
+	padding: 0px;
+	margin: 0px;
+	font-size: 100%;
+	background: #fff;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a:focus {
+	outline: none;
+	border: none;
+	outline: 0;
+	border: 0;
+}
+a:hover {
+	outline: none;
+	border: none;
+	outline: 0;
+	border: 0
+}
+input {
+	border: none;
+	font-size: 0.875em;
+	outline: none;
+	outline: medium;
+	text-transform: none;
+	-webkit-appearance: none;
+}
+input:-moz-placeholder {
+font-size: 0.875em;
+color: #ccc
+}
+input::-webkit-input-placeholder {
+font-size: 0.875em;
+color: #ccc;
+-webkit-transition: color.5s;
+}
+ input:focus::-webkit-input-placeholder {
+ color: #c2c2c2;
+ -webkit-transition: color.5s;
+}
+ol, ul {
+	list-style: none;
+}
+a, li, ol, ul {
+	padding: 0px;
+	margin: 0px;
+}
+a {
+	color: #808080;
+	text-decoration: none;
+}
+.long_button {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background: #f5560f;
+}
+/*top*/
+
+.go_home {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.go_home img {
+	width: 100%;
+}
+.pull_left {
+	float: left;
+}
+.warper {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	background: #fff;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.new_lo {
+	margin-top: 15px;
+	padding: 0px 10px;
+	font-size: 14px;
+}
+.new_lo li {
+	height: 44px;
+	line-height: 44px;
+	overflow: hidden;
+	margin: 10px 0;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	position: relative;
+	text-align: left;
+	-webkit-transition: box-shadow .5s;
+}
+.new_lo li input {
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(255,0,0,0);
+}
+
+.new_lo li select{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+#div1 .new_lo,#div2 .new_lo{ margin-top:3px;}
+.name:hover, .name:focus, .name:hover, .name:focus {
+	border: 1px solid #f96c35;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 0 8px rgba(255, 97, 0, 0.6);
+	-webkit-transition: box-shadow .5s;
+}
+.name input::-webkit-input-placeholder {
+ color: #999;
+ -webkit-transition: color .5s;
+}
+ .name input:focus::-webkit-input-placeholder, .name input:focus::-webkit-input-placeholder {
+ color: #666;
+ -webkit-transition: color .5s;
+}
+#code, .check_code {
+	height: 35px;
+	vertical-align: middle;
+	position: absolute;
+	top: 5px;
+	right: 0px
+}
+.login_bar {
+	padding: 0 10px;
+	margin-top: 15px;
+	text-align: right;
+	font-size: 0.875em;
+}
+.login_bar a {
+	font-size: 1em;
+}
+.login_button {
+	clear: both;
+	display: block;
+	height: 45px;
+	border-radius: 4px;
+	margin: 15px 0px 10px 0px;
+	font-size: 1.125em;
+	font-family: Microsoft YaHei, sans-serif, Helvetica;
+	line-height: 45px;
+}
+.gray_button {
+	background: #cccccc
+}
+/*icon*/
+.input-icon {
+	display:block; position: absolute;; left: 5px; top:50%; margin-top: -12px;
+	width: 20px;
+	height: 24px;
+	background: url(../images/login-all.png) no-repeat;
+	background-size: 80px;
+	vertical-align: middle;
+}
+.input-icon.user{ background-position: 0 0;}
+.input-icon.password{ background-position: -20px 0;}
+.input-icon.mobile{ background-position: -38px 0;}
+.input-icon.sms{ background-position: -58px 2px;}
+
+.right_btn {
+	height: 23px;
+	line-height: 23px;
+	color: #ed145b;
+	border-radius: 12px;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	border: solid 1px #ed145b;
+	padding: 0px 10px;
+	font-size: 0.75em;
+	background: #fff;
+}
+.ab_position {
+	position: relative;
+}
+.coo_nav {
+	background: #fff;
+	border-bottom: solid 1px #ddd
+}
+.coo_nav li {
+	width: 50%;
+	height: 45px;
+	text-align: center;
+	float: left;
+}
+.coo_nav li a {
+	line-height: 45px;
+	height: 43px;
+	display: inline-block;
+	color: #999;
+	font-size: 0.875em;
+}
+.coo_nav li a.selected {
+	color: #ed145b;
+	border-bottom: solid 2px #ed145b
+}
+.notice_div {margin-left: 30px;
+	position: relative;
+	z-index: 1;
+}
+.login-reg-input{ width: 98%; height: 42px;}
+.email_input, .tel_input {
+	position: relative;
+	z-index: 2;
+}
+.email_notice {
+	position: absolute;
+	vertical-align: middle;
+	background: transparent;
+	line-height: 45px;
+}
+.show_notice {
+	z-index: 99;
+}
+.ajax-loading {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: none;
+}
+.ajax-loading img {
+	display: block;
+	margin: 200px auto;
+}
+.error_outer {
+	font-size: 1em;
+	background: #ffffff;
+	padding: 40px 10px 40px 10px;
+	color: #666;
+}
+.error_messge {
+	margin: 0px;
+	text-align: center;
+}
+.normal_btn {
+	display: block;
+	color: #ed145b;
+	text-align: center;
+	width: auto;
+	width: 30%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 0.875em;
+	border: solid 1px #ed145b;
+	margin: 20px auto 0px auto;
+}
+.gh_login {
+	color: #f5560f;
+	text-decoration: underline;
+}
+.line {
+	display: block;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1.125em;
+	border-top: 1px #ccc solid;
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+/*register*/
+.login_bottom {
+	padding-bottom: 15px;
+}
+.fon_color {
+	color: #00affe;
+	text-decoration: underline;
+}
+.user-verify {height: 44px; margin-right: 110px;
+    line-height: 44px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+.btn-verify{ float: right;width: 100px; position: absolute; right: 0; top:0;}
+
+.new_lo li.no-border{ border: 0; height: 46px;}
+.new_lo li.no-border:after{ content: ''; display: block; clear: both;}
+.get-yzm {display: block;width: 100%;height: 46px;line-height: 46px;border: 1px #ccc solid;border-radius: 4px;text-align: center;
+	margin:0;background: url(../images/yzm_bg.png);color: #f65006; box-sizing: border-box;}
+.new_lo a:active, .new_lo a:visited {
+	background-image: none;
+	background: #ccc!important;
+	color: #666!important
+}
+/*找回密码*/
+.con_select{width:100%; height:30px; border:0;  color:#6f6f6f; padding-left:10px; background:url(../images/select.png) 99% center no-repeat; background-size:16px}
+.con_select option{ width:100%; border-color:#CCC}
+.password_padding{ padding-left:10px}
+.div_password{display: inline-block;
+text-align: right;}
+
+/*修改密码*/
+.change_password {
+    margin-top: 15px;
+    padding: 0px 10px;
+    font-size: 0.875em;
+}
+.password-input{  height: 40px; vertical-align: middle; box-sizing: border-box; line-height: 20px;width: 100%;border-radius: 4px; padding-left: 5px;
+    -webkit-tap-highlight-color: rgba(255,0,0,0); display: inline-block;border: 1px solid #ccc; position: relative; text-align: left; -webkit-transition: box-shadow .5s;
+}
+.change_password li{ position:relative;height: 45px;
+    line-height: 45px; margin-top:10px}
+.div_password{ position: absolute;
+    margin-top:5px;
+    width: 62px;
+    text-align:right}
+.div_password_a{display: block;
+    padding: 0;
+    margin: 0 0 0 75px;
+    overflow: hidden;}
+.change_password li input{height: 40px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 20px;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);}
+
+/*橙色标题文字*/
+.org-title{ color:#f5560f; font-weight: bold; font-size: 16px;}

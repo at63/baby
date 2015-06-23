@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>产品类表</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script>
+        var request = {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="sub-content">
+    <h1 class="posit-top"><span>特产干货</span> <a class="history-back" href="javascript:history.back()"><img
+            src="images/history-back.png" alt="返回"/></a></h1>
+
+    <div class="new-category-box">
+        <div class="new-category-head">
+            <ul>
+                <li class="wp-list" data-toggle="class-wrapper" id="class_title">分类</li>
+                <li class="wp-list" data-toggle="brand-wrapper" id="brand_title">品牌</li>
+                <li class="paixu">销量<i class="icon up"></i></li>
+                <li class="paixu">返利<i class="icon up"></i></li>
+                <li class="paixu">价格<i class="icon down"></i></li>
+            </ul>
+        </div>
+        <div class="new-category-list" id="class-wrapper">
+            <div class="category-left">
+                <div class="category-title active">
+                    <h3 class="title">全部</h3>
+                </div>
+                <ul>
+                    <li><h4 class="title">特产干货</h4></li>
+                    <li><h4 class="title">休闲零食</h4></li>
+                    <li><h4 class="title">滋补养生</h4></li>
+                    <li><h4 class="title">茶饮冲调</h4></li>
+                    <li><h4 class="title">居家食材</h4></li>
+                </ul>
+            </div>
+            <div class="category-right">
+                <div class="plr4">
+                <table class="class-table" cellpadding="4" cellspacing="4">
+                    <thead>
+                    <tr>
+                        <th colspan="2"><span>全部分类</span></th>
+                    </tr>
+                    </thead>
+                </table>
+                </div>
+                <ul>
+                    <li>
+                        <table class="class-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>和田大枣</span></td>
+                                <td><span>香菇菌类</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>腊肉香肠</span></td>
+                                <td><span>饼干糕点</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>海产干货</span></td>
+                                <td><span>坚果炒货</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>腌制酱菜</span></td>
+                                <td><span>果脯蜜饯</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>下饭菜</span></td>
+                                <td><span>肉类小食</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="class-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>饼干糕点</span></td>
+                                <td><span>坚果炒货</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>果脯蜜饯</span></td>
+                                <td><span>肉类小食</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>水产小食</span></td>
+                                <td><span>蛋制品</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="class-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>蜂类滋补</span></td>
+                                <td><span>养生滋补</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>药食同源</span></td>
+                                <td><span>滋补食材</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="class-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>冲饮食品</span></td>
+                                <td><span>茶叶</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>饮料</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="class-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>米面粮油</span></td>
+                                <td><span>五谷杂粮</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>调味品</span></td>
+                                <td><span>饼干糕点</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>海产干货</span></td>
+                                <td><span>坚果炒货</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>腌制酱菜</span></td>
+                                <td><span>果脯蜜饯</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>下饭菜</span></td>
+                                <td><span>肉类小食</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="new-category-list" id="brand-wrapper">
+            <div class="category-left">
+                <div class="category-title active">
+                    <h3 class="title">全部</h3>
+                </div>
+                <ul>
+                    <li><h4 class="title">特产干货</h4></li>
+                    <li><h4 class="title">休闲零食</h4></li>
+                    <li><h4 class="title">滋补养生</h4></li>
+                    <li><h4 class="title">茶饮冲调</h4></li>
+                    <li><h4 class="title">居家食材</h4></li>
+                </ul>
+            </div>
+            <div class="category-right">
+                <div class="plr4">
+                    <table class="brand-table" cellpadding="4" cellspacing="4">
+                        <thead>
+                        <tr>
+                            <th colspan="2"><span>全部品牌</span></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <ul>
+                    <li>
+                        <table class="brand-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>五峰采花毛尖</span></td>
+                                <td><span>黄老五花生糖</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>晶玉</span></td>
+                                <td><span>口水娃</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>品善食品</span></td>
+                                <td><span>山老汉</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>花间蜜语</span></td>
+                                <td><span>王家渡</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>蜀道香</span></td>
+                                <td><span>圣德玺</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="brand-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>喵在岛</span></td>
+                                <td><span>雪山果园</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>晶玉</span></td>
+                                <td><span>口水娃</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>悦木草集</span></td>
+                                <td><span>山老汉</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>花间蜜语</span></td>
+                                <td><span>王家渡</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>趣逗妮</span></td>
+                                <td><span>五峰采花毛尖</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="brand-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>黄金湖</span></td>
+                                <td><span>黄老五花生糖</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>晶玉</span></td>
+                                <td><span>神丹</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>品善食品</span></td>
+                                <td><span>山老汉</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>花间蜜语</span></td>
+                                <td><span>五峰绿茶</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>七好喔</span></td>
+                                <td><span>圣德玺</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="brand-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td><span>慕滋</span></td>
+                                <td><span>黄老五花生糖</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>晶玉</span></td>
+                                <td><span>口水娃</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>品善食品</span></td>
+                                <td><span>不二食代</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>花间蜜语</span></td>
+                                <td><span>王家渡</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>御生堂</span></td>
+                                <td><span>圣德玺</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table class="brand-table" cellpadding="4" cellspacing="4">
+                            <tbody>
+                            <tr>
+                                <td width="50%"><span>五峰采花毛尖</span></td>
+                                <td><span>黄老五花生糖</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>晶玉</span></td>
+                                <td><span>河岸红</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>品善食品</span></td>
+                                <td><span>Casa Miel/可莎蜜儿可莎蜜儿</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>钟祥兴利</span></td>
+                                <td><span>王家渡</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>西域之恋</span></td>
+                                <td><span>圣德玺</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="chanpin-list-items">
+        <li>
+            <div class="shipin-img">
+                <a href="#">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+        <li>
+            <div class="shipin-img">
+                <a href="#">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+        <li>
+            <div class="shipin-img">
+                <a href="#">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+        <li>
+            <div class="shipin-img">
+                <a href="#">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+        <li>
+            <div class="shipin-img">
+                <a href="Details.html">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+        <li>
+            <div class="shipin-img">
+                <a href="Details.html">
+                    <img src="images/tiaoshi_list_img1.jpg" alt="新疆红枣"/>
+                </a>
+            </div>
+            <div class="shipin-info">
+                <p class="pro-name"><a href="Details.html">新疆果园1000克新疆雪栆礼盒</a></p>
+
+                <p>净重：<span class="jingzhong">1000g</span></p>
+
+                <p>返利：<span class="fanli">15.3</span></p>
+
+                <p class="text-red">￥<span class="price">218.90</span></p>
+                <a href="" class="shop-car"></a>
+                <a class="btn share">分享</a>
+            </div>
+        </li>
+    </ul>
+    <p class="chanpin-list-more">更多...</p>
+    <footer class="footer" id="footer">
+        <div class="btn-quite home"><a href="index.html"><i class="icon-foot"></i><span>主页</span></a></div>
+        <div class="btn-quite tuijian"><a href="list.html"><i class="icon-foot"></i><span>推荐</span></a></div>
+        <div class="btn-quite shopping"><a href="ShopCart.html"><i class="icon-foot"></i><span>购物车</span></a><span class="shop-num">21</span></div>
+        <div class="btn-quite yonghu"><a href="user.html"><i class="icon-foot"></i><span>我的</span></a></div>
+    </footer>
+</div>
+<div class="shadow-bg" id="shadow-bg"></div>
+<!-- 分享层 -->
+<div class="share-box" id="share-box">
+    <div class="share-main">
+        <h3 class="share-title">分享商品赚佣金</h3>
+        <div class="share-items">
+            <div class="bdsharebuttonbox">
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信好友</a>
+                <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ</a>
+                <a href="#" class="bds_qzone"  data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+                <a href="#"  class="bds_mail" data-cmd="mail" title="分享到邮件分享">邮件</a>
+                <style>
+                    .bdshare-button-style0-32 a{display: block;
+                        margin:0 0 14px 0; text-indent: 0; font-size: 12px; color: #777;
+                        text-align: center;
+                        width: 33.3%;
+                        float: left;  background: url(images/share_items.jpg) no-repeat; height:18px; line-height: 18px; padding-top: 45px;  background-size: 45px auto;}
+                    .bdshare-button-style0-32 .bds_weixin{  background-position: center 0;}
+                    .bdshare-button-style0-32 .bds_sqq {  background-position: center -139px;}
+                    .bdshare-button-style0-32 .bds_qzone{  background-position: center -210px;}
+                    .bdshare-button-style0-32 .bds_tsina{  background-position: center -350px;}
+                    .bdshare-button-style0-32 .bds_tqq{  background-position: center -280px;}
+                    .bdshare-button-style0-32 .bds_mail{  background-position: center -420px;}
+                </style>
+            </div>
+            <script>window._bd_share_config = {
+                "common": {
+                    "bdSnsKey": {},
+                    "bdText": "",
+                    "bdMini": "2",
+                    "bdMiniList": false,
+                    "bdPic": "",
+                    "bdStyle": "0",
+                    "bdSize": "32"
+                },
+                "share": {},
+                /*"image": {
+                 "viewList": ["weixin", "sqq", "qzone", "tsina", "tqq", "mail"],
+                 "viewText": "分享到：",
+                 "viewSize": "16"
+                 },*/
+                "selectShare": {
+                    "bdContainerClass": null,
+                    "bdSelectMiniList": ["weixin", "sqq", "qzone", "tsina", "tqq", "mail"]
+                }
+            };
+            with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+        </div>
+        <p class="share-cancel" id="share-cancel">取消</p>
+    </div>
+</div>
+<!-- 分享层 end-->
+<script src="jQuery/jquery-1.11.0.min.js"></script>
+<script src="jQuery/ClassList.js"></script>
+<script src="jQuery/base.js"></script>
+</body>
+</html>
