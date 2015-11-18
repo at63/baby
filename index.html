@@ -16,8 +16,12 @@
         </div>
         <div class="contact">
             <ul>
-                <li><i class="icon qq"></i><span class="text text-qq">343857331</span></li>
-                <li><i class="icon tel"></i><span class="text text-tel">15071355371</span></li>
+                <li>
+                    <a class="db" href="http://wpa.qq.com/msgrd?v=3&uin=343857331&site=qq&menu=yes" target="_blank">
+                    <i class="icon qq"></i><span class="text text-qq">343857331</span>
+                    </a>
+                </li>
+                <li><i class="icon tel"></i><span class="text text-tel">请咨询QQ</span></li>
                 <li><i class="icon mail"></i><span class="text text-mail">kuyae@qq.com</span></li>
             </ul>
         </div>
@@ -51,13 +55,13 @@
                 职位意向：前端开发
             </p>
         </div>
-        <p class="arrow-down"></p>
+        <p class="arrow-down move-down"></p>
     </div>
 </div>
-<div class="screen resume-box2">
+<div class="screen resume-box2 hide">
     <div class="auto experience-head posit-r">
-        <p class="box2-slide slide-col"></p>
-        <p class="box2-slide slide-row"></p>
+        <p class="box2-slide slide-col col1"></p>
+        <p class="box2-slide slide-row row1"></p>
         <ul class="experience">
             <li class="gong"></li>
             <li class="zuo"></li>
@@ -105,8 +109,9 @@
                 5、运用Dreamwaver、flash、Photoshop、CorelDRAW等软件设计制作网页</p>
         </div>
     </div>
+    <p class="arrow-down2"></p>
 </div>
-<div class="screen resume-box3">
+<div class="screen resume-box3 hide">
     <div class="wave-top"></div>
     <div class="auto posit-r">
         <p class="text-case text-an"></p>
@@ -124,42 +129,63 @@
     $(function () {
         //窗口高度
         var screenHeight = $(window).height();
-        var lineHeight = screenHeight - 121
+        var lineHeight = screenHeight - 121;
         $('.screen').height(screenHeight);
-        $('.resume-h').height(screenHeight-80)
+        $('.resume-h').height(screenHeight-80);
         $('.line-col').height(lineHeight);
         $(this).scrollTop = 0;
 
-        //滚动条高度
-        $(window).on('scroll', function () {
-            var top = $(this).scrollTop();
-            if (top > 0 ) {
-               $('.arrow-down').addClass('move-down');
+        //向下箭头
+        $('.arrow-down').click(function () {
+            $('.resume-box2').addClass('animate').show();
+            $('.resume-box1').animate({marginTop:'-='+screenHeight}, 1000);
 
-            }
-             if (top >= 50) {
-                $('.resume-box1').animate({height:0},1000,function() {
-                    $(this).hide();
-                });
-            } if (top > 50 && top < 100) {
-                $('.resume-box1').animate({height:0},1000,function() {
-                  $(this).hide();
-                });
-                $('.slide-col').addClass('col1');
-                $('.slide-row').addClass('row1');
-                $('.resume-box2').animate({height:screenHeight},1000,function() {
-                    $(this).show();
-                });
-            }
-            /*if (top >= 100) {
-                $('.resume-box2').animate({height:0},1000,function() {
-                    $(this).hide();
-                });
-                $('.resume-box3').animate({height:screenHeight},1000,function() {
-                    $(this).show();
-                });
-            }*/
-        })
+            var i = 0 ;
+            $('.experience li').eq(i).addClass('rotate').siblings().removeClass('rotate');
+            var gzjy = function(){
+                i++;
+                $('.experience li').eq(i).addClass('rotate').siblings().removeClass('rotate');
+            };
+            setInterval(gzjy,1500);
+        });
+        //向下箭头2
+        $('.arrow-down2').click(function () {
+            $('.resume-box3').addClass('animate').show();
+            $('.resume-box1').animate({marginTop:'-='+screenHeight}, 1000);
+        });
+
     })
+</script>
+<script>
+
+    var scrollFunc = function (e) {
+        var screenHeight = $(window).height();
+        var direct = 0;
+        e = e || window.event;
+        if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+            if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                //('.resume-box1').animate({marginTop:'+='+screenHeight}, 1000);
+                //alert("滑轮向上滚动");
+            }
+            /*if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                alert("滑轮向下滚动");
+            }*/
+        } else if (e.detail) {  //Firefox滑轮事件
+            if (e.detail> 0) { //当滑轮向上滚动时
+                //('.resume-box1').animate({marginTop:'+='+screenHeight}, 1000);
+                //alert("滑轮向上滚动");
+            }
+            /*if (e.detail< 0) { //当滑轮向下滚动时
+                alert("滑轮向下滚动");
+            }*/
+        }
+        ScrollText(direct);
+    }
+    //给页面绑定滑轮滚动事件
+    if (document.addEventListener) {
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+    }
+    //滚动滑轮触发scrollFunc方法
+    window.onmousewheel = document.onmousewheel = scrollFunc;
 </script>
 </html>
