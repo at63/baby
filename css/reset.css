@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*
+版本：v=1
+制作人：李瑶琴
+时间：2016.01.19
+*/
+/*reset*/
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form {
+    margin: 0;font-family: 'Microsoft YaHei', Helvetica, Arial, Sans-Serif;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+body {color: #666; font-size: 12px;    /*-webkit-user-select: none;*/   /*-webkit-text-size-adjust: none;*/}
+header, section, footer {display: block; margin: 0; padding: 0;}
+img{ padding: 0; margin: 0; border: 0;}
+a { text-decoration: none; outline: 0;  cursor: pointer; color: #777;}
+button { outline: 0;   border: none;}
+button::-moz-focus-inner {  border: 0;}
+h1, h2, h3, h4, h5, h6 {  font-size: 100%;}
+ul, ol, li {   list-style: none;}
+p, span, a {  -webkit-user-select: auto;}
+table {   border-collapse: collapse;  border-spacing: 0;}
+input {  outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+input[type="text"],
+input[type="tel"],
+input[type="button"],
+input[type="number"],
+button,textarea{-webkit-appearance : none ; font-family: "microsoft yahei"; }
+*:focus { outline: none;   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   -webkit-text-stroke: none;}
+a:link, a:visited { outline: none;}
+a:hover { outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+a:focus {  outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    -webkit-text-stroke: none;}
+.l { float: left;}
+.r { float: right;}
+.auto { margin-left: auto;   margin-right: auto;}
+.c{ *zoom: 1;}
+.c:after { content: '\0020';  display: block; height: 0; clear: both;}
+
+.hide{ display: none;}
+.show{ display: block;}
+.pr{position: relative;}
+.center{text-align: center;}
+.text-r{text-align: right;}
+.text-l{text-align: left;}
+
+/*间距*/
+.pt30{padding-top: 30px;}
+.pt50{padding-top: 50px;}
+.pt70{padding-top: 70px;}
+.pr50{padding-right: 50px;}
+.pl50{padding-left: 50px;}
+.pb50{padding-bottom: 50px;}
+.mb60{margin-bottom: 60px;}

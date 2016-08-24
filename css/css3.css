@@ -1,0 +1,71 @@
+/*旋转x*/
+@keyframes turn {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(-360deg); }
+}
+@-webkit-keyframes turn {
+    from { -webkit-transform: rotate(0deg);  }
+    to { -webkit-transform: rotate(-360deg); }
+}
+
+/*旋转Z*/
+@keyframes rotate {
+    0% {transform: rotateY(0deg); }
+    50% {transform: rotateY(180deg); }
+    100% {transform: rotateY(0deg); }
+}
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotateY(0deg);  }
+    50% { -webkit-transform: rotateY(180deg); }
+    100% {transform: rotateY(0deg); }
+}
+
+/*波浪线*/
+@keyframes wave {
+    0% { background-position: 0 center ; }
+    100% {background-position: right center ;  }
+}
+@-webkit-keyframes wave {
+    0% { background-position: 0 center ; }
+    100% {background-position: right center ;  }
+}
+/*下箭头*/
+@keyframes ani_arrow {
+    0% { opacity: 0; transform: translateY(-10px); }
+    40% { opacity: 1; transform: translateY(-4px) }
+    90% { opacity: 1; transform: translateY(4px) }
+    100% { opacity: 0; transform: translateY(10px) }
+}
+@-webkit-keyframes ani_arrow {
+    0% { opacity: 0; -webkit-transform: translateY(-10px); }
+    40% { opacity: 1; -webkit-transform: translateY(-4px); }
+    90% { opacity: 1; -webkit-transform: translateY(4px); }
+    100% { opacity: 0; -webkit-transform: translateY(10px); }
+}
+/*缩小一次*/
+@keyframes narrow {
+    0% { width: 800px; height: 340px; margin-left: -400px; margin-top: -170px;   opacity: 0;}
+    100% {width: 405px;height: 168px; margin-left: -203px; margin-top: -84px;   opacity: 1;}
+}
+@-webkit-keyframes narrow {
+    0% { width: 800px; height: 340px; margin-left: -400px; margin-top: -170px;  opacity: 0;}
+    100% {width: 405px;height: 168px; margin-left: -203px; margin-top: -84px;  opacity: 1;}
+}
+/*漂浮*/
+@keyframes float_up_down {
+    0% {  transform: translateY(-20px);  transform: translateX(-10px);}
+    9% {  transform: translateY(-10px);  transform: translateX(-7px);}
+    36% { transform: translateY(0px);  transform: translateX(4px);}
+    45% { transform: translateY(0px); transform: translateX(4px);}
+    99% {  transform: translateY(-10px);  transform: translateX(-7px);}
+    100% {  transform: translateY(-20px); transform: translateX(-10px); }
+}
+@-webkit-keyframes float_up_down {
+    0% {  -webkit-transform: translateY(-20px);  -webkit-transform: translateX(-10px);}
+    9% {  -webkit-transform: translateY(-10px);  -webkit-transform: translateX(-7px);}
+    36% { -webkit-transform: translateY(0px);  -webkit-transform: translateX(4px);}
+    45% { -webkit-transform: translateY(0px); -webkit-transform: translateX(4px);}
+    99% {  -webkit-transform: translateY(-10px);  -webkit-transform: translateX(-7px);}
+    100% {  -webkit-transform: translateY(-20px); -webkit-transform: translateX(-10px); }
+}
+
