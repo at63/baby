@@ -1,0 +1,89 @@
+
+.main-auto{max-width: 1200px; min-width:1100px; margin: 0 auto;}
+body{background: url(../images/bd_bg.png) repeat;    overflow-x: hidden;}
+.bg_bg{ width: 1800px; position: absolute; left: 50%; top:0; margin-left: -900px;z-index:1;height: 1300px;overflow: hidden;}
+.bg_bg img{display: block; width: 100%;}
+.content{width: 1200px; position: absolute; left: 50%; top:0; margin-left: -600px; z-index: 10;}
+.header {   height: 415px; padding-top: 80px;
+    /*background: #95b2c4; !* Old browsers *!
+    background: -webkit-linear-gradient(left top, #95b2c4, #f2e5f4); !* Safari 5.1 - 6.0 *!
+    background: -o-linear-gradient(bottom right, #95b2c4, #f2e5f4); !* Opera 11.1 - 12.0 *!
+    background: -moz-linear-gradient(bottom right, #95b2c4, #f2e5f4); !* Firefox 3.6 - 15 *!
+    background: linear-gradient(to bottom right, #95b2c4, #f2e5f4); !* 标准的语法 *!*/
+}
+.head-block{ width: 405px; height: 122px; padding-top: 46px; position: relative;}
+.border-b{ display: block; width: 406px; height: 168px; background: url(../images/bg_border.png) no-repeat;
+    background-size: 100% 100%;  position: absolute; left: 50%; top:50%; margin-left: -203px; margin-top: -84px;    opacity: 1;}
+.icon-per{ display: block; width: 64px; height: 66px; background: url(../images/icon_photo.png) no-repeat; background-size: auto 100%;
+    opacity:0;
+position: absolute; top:-37px; left: 50%; z-index: 2; margin-left: -32px;}
+.per-info{width: 200px; line-height:36px; font-size: 20px; color: #fff; text-align: center; margin:  0 auto; opacity: 0;}
+.line-wave01{ display:block; width: 40px; height: 40px; background: url(../images/line_wave01.png) 0 center repeat-x;  position: absolute;top:0;  z-index: 2;}
+.line-wave01.wave-l{ left: -40px;}
+.line-wave01.wave-r{ right: -40px;}
+.per-info-detail{font-size: 12px; color: #999; text-transform:uppercase; word-spacing: 10px;letter-spacing: 8px; margin-bottom: 5px;
+    opacity: 0;}
+.per-info-year{display: inline-block; line-height: 22px; color: #d3f7f0; font-size: 12px; border-top: 1px solid #bad9e7; border-bottom: 1px solid #bad9e7;
+    opacity: 0;}
+.pre-mouse{ display: block; width: 19px; height: 38px;background: url(../images/icon_mouse.png) no-repeat; position: absolute; left: 50%; bottom: -10px;
+    z-index: 2; margin-left: -10px;
+    opacity: 0;}
+.arrow-down{ display: block; height:30px; background: url(../images/arrow-down2.png) center center no-repeat;background-size: auto 20px;
+    opacity: 0;
+    position: fixed;
+    width:30px;
+    bottom:20px;
+    left:50%;
+    margin-left: -15px;}
+
+.arrow-down-ani{animation:ani_arrow 1.2s ease-in infinite;-webkit-animation:ani_arrow 1.2s ease-in infinite;}
+/*电脑*/
+.computer{ width: 715px; height: 431px; background: url(../images/computer.png) no-repeat; padding: 22px 84px 0 81px; box-sizing: border-box;}
+.ani_u_d{animation:float_up_down 5s linear infinite; -webkit-animation:float_up_down 5s linear infinite;}
+.section01{ margin: -180px auto 100px auto;
+    opacity: 0; }
+.screen-main{width: 550px; height: 340px; background: #3eb7a4 url(../images/bg_dot.png) repeat;}
+.main-half{width: 40%; font-size: 15px; color: #fff; line-height: 30px;
+    opacity: 0;}
+.info-title{height: 46px; text-indent: -1000px; overflow: hidden;}
+.info-title.about{background: url(../images/my_info.png) right top no-repeat;  background-size: auto 100%; margin: 50px 0 40px 0;}
+.info-title.evaluation{background: url(../images/my_evaluation.png) left top no-repeat;  background-size: auto 100%; margin-top: 40px;}
+.screen-title{width: 200px; height:60px;line-height:60px; font-size: 50px; font-weight: 200; color: #cee4f1; text-align: center; margin:  0 auto;}
+.line-wave02{ display:block; width: 60px; height: 60px; background: url(../images/line_wave02.png) 0 center repeat-x;  position: absolute;top:0;  z-index: 2;}
+.line-wave02.wave-l{ left: -40px;}
+.line-wave02.wave-r{ right: -40px;}
+.screen-title-info{font-size: 12px;color: #cee4f1; text-align: center;}
+.move-lr{animation: wave 5s linear infinite;
+    -moz-animation: wave 5s linear infinite;
+    -webkit-animation: wave 5s linear infinite;}
+/*工作内容*/
+.work-details{ color: #cee4f1; line-height: 1.5;}
+/*汽车*/
+.icon-car{ display: inline-block; width: 88px; height: 42px; background: url(../images/car_body.png) right top no-repeat; position: relative;}
+.icon-round{ display: block; width: 19px; height: 19px; background: url(../images/car_round.png) no-repeat; position: absolute; top:25px;
+    animation: turn 1s linear infinite;
+    -moz-animation: turn 1s linear infinite;
+    -webkit-animation: turn 1s linear infinite;}
+
+.icon-round.dl{ left: 11px;}
+.icon-round.dr{ left: 58px;}
+.my_prof{font-size: 18px; line-height: 30px; padding-bottom: 15px;}
+.my_work{font-size: 13px; line-height: 2; padding-bottom: 20px;}
+.my_company{font-size: 24px; line-height: 44px; border-bottom: 8px solid #f00; overflow: hidden;display: inline-block}
+/*money*/
+.icon-body{ display: block; width: 75px; height: 58px; background: url(../images/pa_body.png) no-repeat; position: relative;}
+.icon-money{display: block; width: 27px; height: 38px; background: url(../images/icon_money.png) no-repeat; position: absolute; left: 16px;top:11px;
+    animation: rotate 1s linear infinite;
+    -moz-animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;}
+.screen01{
+    min-height: 900px;
+}
+.narrow{-webkit-animation: narrow 0.7s ease-in 1; animation-fill-mode: both; }
+.opacity1{
+    opacity: 1;}
+.screen-body{
+    /*position: relative;
+    top:50%;
+    margin-top:-306px;*/
+}

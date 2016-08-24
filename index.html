@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>李瑶琴个人简历</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/css3.css">
+    <link rel="stylesheet" href="fullpage/javascript.fullPage.css">
+</head>
+<body>
+<div class="bg_bg">
+    <img class="img" src="images/bg_img04.jpg" alt="">
+    <img class="img" src="images/bg_img05.jpg" alt="">
+    <img class="img" src="images/bg_img06.jpg" alt="">
+</div>
+<div id="fullpage" class="content">
+    <div class="section screen01">
+        <div class="header">
+            <div class="head-block animated tada pr auto">
+                <p class="border-b"></p>
+                <p class="icon-per"></p>
+                <div class="per-info pr auto">
+                    <span class="line-wave01 wave-l move-lr"></span>
+                    <div class="per-info-title">李瑶琴个人简历</div>
+                    <span class="line-wave01 wave-r move-lr"></span>
+                </div>
+                <p class="per-info-detail center">resume</p>
+                <p class="center">
+                    <span class="per-info-year">2016</span>
+                </p>
+                <p class="pre-mouse"></p>
+
+            </div>
+        </div>
+        <div class="computer section01">
+            <div class="screen-main c">
+                <div class="main-half l" id="info-left">
+                    <h2 class="info-title about">基本信息</h2>
+                    <p class="text-r">姓名：李瑶琴<br/>
+                        性别：女<br/>
+                        学历：大专<br/>
+                        专业：计算机网络<br/>
+                        出生日期：1987.4.27<br/>
+                        职位意向：前端开发
+                    </p>
+                </div>
+                <div class="main-half pt30 r" id="info-right">
+                    <p class="text-l">多年项目开发经验 <br>
+                        能够高质量的完成项目<br>
+                        页面还原设计稿精确率99%<br>
+                        良好的编码规范与团队协作能力<br>
+                        责任心强,勇于承担</p>
+                    <h2 class="info-title evaluation">自我评价</h2>
+                </div>
+            </div>
+        </div>
+        <a class="arrow-down" href="#"></a>
+    </div>
+    <div class="section screen02">
+        <div class="screen-head">
+            <h2 class="screen-title pr">
+                <span class="line-wave02 wave-l move-lr"></span> 01 <span class="line-wave02 wave-r move-lr"></span>
+            </h2>
+            <p class="screen-title-info">工 · 作 · 经 · 历</p>
+        </div>
+        <div class="screen-body c pt50 pb50">
+            <div class="main-auto">
+                <div class="computer ani_u_d l">
+                    <div class="screen-main c">
+                        <img src="images/img01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="work-details text-r r pt30">
+                    <p class="icon-car mb60">
+                        <span class="icon-round dl"></span>
+                        <span class="icon-round dr"></span>
+                    </p>
+                    <p class="my_prof">前端开发</p>
+                    <p class="my_work">
+                        1.主要负责移动端前端页面的开发和功能实现；<br/>
+                        2.配合后端开发人员与UI设计师，对功能型页面程序提供与整合；<br/>
+                        3.应用ajax和相关技术与后台进行交互通信；<br/>
+                        4.负责持续优化APP及网站的用户体验和可用性；
+                    </p>
+                    <h3 class="my_company">北京有壹手汽车有限公司</h3>
+                </div>
+            </div>
+        </div>
+        <div class="screen-body c pt50 pb50">
+            <div class="main-auto">
+                <div class="work-details text-l l pt30 pl50">
+                    <p class="icon-body mb60">
+                        <span class="icon-money"></span>
+                    </p>
+                    <p class="my_prof">前端开发</p>
+                    <p class="my_work">
+                        1.主要负责移动端前端页面的开发和功能实现；<br/>
+                        2.配合后端开发人员与UI设计师，对功能型页面程序提供与整合；<br/>
+                        3.应用ajax和相关技术与后台进行交互通信；<br/>
+                        4.负责持续优化APP及网站的用户体验和可用性；
+                    </p>
+                    <h3 class="my_company">深圳平安金融科技咨询有限公司</h3>
+                </div>
+                <div class="computer ani_u_d r">
+                    <div class="screen-main c">
+                        <img src="images/img02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/request.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $(function () {
+        $(window).scroll(function (e) {
+            var stop = $(this).scrollTop();
+            $('.bg_bg').css('top', +(stop * 0.6 ));
+            /*var t = $(window).scrollTop();
+            $('.fly-big').css('left', t + 365).css('top', 0 - 0.5 * t + 16);
+            $('.fly-small').css('left', 0.8 * t + 793).css('top', 0 - 0.5 * t + 278)*/
+        });
+    })
+</script>
+</body>
+</html>
